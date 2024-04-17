@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+	font-family: "Inter", sans-serif;
+	padding: 0%;
+	margin: 0%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: bold;
+}
+
+ul.navbar-nav {
+	text-align: center;
+}
+
+img.topNavLogo {
+	height: 60px;
+}
+
+.fixed-top {
+    position: absolute;
+}
+a#navDownload {
+    background: #F36820;
+    border-radius: 50px;
+    padding: 8px;
+    color: white;
+	display: inline-flex;
+    text-decoration: none;
+}
+a#navDownload1 {
+    background: #F36820;
+    border-radius: 50px;
+    padding: 8px;
+    color: white;
+	display: inline;
+    text-decoration: none;
+}
+
+.carousel-caption{
+    bottom: 6.25rem;
+    line-height: 49px;
+}
+img#carouselImage {
+    height: 440px;
+}
+#carouselImage{
+	filter: brightness(0.5);
+}
+
+.bg-light {
+	background-color: transparent !important;
+}
+
+body {
+	transition: filter 0.3s ease;
+}
+
+.blur-body {
+	filter: blur(5px);
+}
+
+.bg-blue {
+	background-color: #fa7708 !important;
+}
+
+.featureHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+////feature section
+
+
+.card {
+	cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: transparent;
+}
+.card-title , .card-text{
+	color: white;
+	text-align: center;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	background-color: #fd7e14;
+}
+
+.card.active {
+	background-color:#fd7e14;
+}
+
+.thirdContainer {
+	// margin-bottom: 65px;
+padding-top:20px;
+background-image: url(../../../assets/FeatureBackground.png);
+}
+.eventHeading {
+    text-align: center;
+    color: white;
+    padding-bottom: 29px;
+
+}
+.featureSection {
+    background: orange;
+}
+
+.card-text {
+	display: none;
+  }
+  
+  .card-hover:hover .card-text {
+	display: block;
+  }
+  
+  .card-body {
+	transition: height 0.3s ease-in-out;
+	overflow: hidden;
+  }
+  
+  .card-body.expanded {
+	height: auto;
+  }
+
+  .card-text {
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: visible; /* Hide overflowing text */
+    width: auto; /* Allow the text to occupy the necessary width */
+  }
+  
+  .card-hover:hover .card-text {
+    animation: marquee 20s linear infinite; /* Adjust duration and timing function as needed */
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); } /* Initial position, text starts off-screen */
+    100% { transform: translateX(-400%); } /* Text moves all the way to the left */
+  }
+  
+  
+
+  
+  ///////Mobile Download//
+  .appstore {
+    width: 36%;
+    padding-left: 6px;
+    margin-bottom: 20px;
+  }
+
+  .qrcode {
+    height: 210px;
+  }
+
+  .mobilePic {
+    height: 437px;
+  }
+
+  #mobileDownloadBackground {
+    background-size: contain;
+    height: 109px;
+    background-image: url(../../../assets/top1.png);
+    background-repeat: no-repeat;
+  }
+
+  .mobileDownload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+//   #downloadSection {
+//     padding-top: 98px;
+//   }
+
+  img#topPics {
+    height: 141px;
+  }
+
+  .downloadText {
+    padding-bottom: 12px;
+    font-size: 36px;
+    background: -webkit-linear-gradient(#F36820, #DF2269);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p.findEvent {
+    font-size: 26px;
+  }
+
+
+  /////////////Footer//////
+  .footer {
+	background: #E7E7E7;
+	padding: 2rem 0;
+  }
+  
+  #subscribe {
+	border-radius: 33px;
+	padding: 0.75rem 1.5rem;
+	margin-bottom: 0;
+  }
+  
+  .btn-primary {
+	border-radius: 33px;
+	padding: 0.75rem 1.5rem;
+  }
+  
+  button#btnSubscribe {
+	background-color: orange;
+	border: none;
+  }
+
+  .footerHeader{
+	text-transform: uppercase;
+  }
