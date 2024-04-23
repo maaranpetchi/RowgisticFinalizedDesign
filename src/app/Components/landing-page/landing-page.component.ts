@@ -109,11 +109,9 @@ export class LandingPageComponent implements OnInit {
     this.selectedImage = 'boats';
   }
 
-  expandCard(event: MouseEvent) {
-    const cardBody = (event.target as HTMLElement).closest('.card-body');
-    if (cardBody) {
-      cardBody.classList.add('expanded');
-    }
+  expandCard(event: MouseEvent, image: string) {
+    this.showImage = true;
+    this.selectedImage = image;
   }
 
   collapseCard(event: MouseEvent) {
