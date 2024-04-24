@@ -146,7 +146,7 @@ li.nav-item {
 .card-text {
   color: white;
   text-align: justify;
-  
+
 
 }
 
@@ -242,7 +242,7 @@ p.joinEvent {
 
 #downloadSection {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 img#topPics {
@@ -270,7 +270,7 @@ p.findEvent {
 
 #subscribe {
   border-radius: 33px;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 2rem;
   margin-bottom: 0;
 }
 
@@ -296,7 +296,7 @@ button#btnSubscribe {
 // }
 
 button#btnSubscribe {
-  background-color:#F36820;
+  background-color: #F36820;
   border: none;
   margin-top: 7px;
 }
@@ -350,19 +350,45 @@ button#btnSubscribe {
   justify-content: center;
 }
 
-#footerAlignment{
+// #footerAlignment {
+//   display: flex;
+//   justify-content: center;
+// }
+
+
+
+
+// .subscribe.row {
+//   padding-left: 88px;
+// }
+
+
+
+div#footerAlignment1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding-left: 32px;
+  // padding-top: 15px;
 }
-
-
 
 
 .subscribe.row {
-  padding-left: 127px;
+  padding-left: 84px;
 }
 
 
+
+#footerAlignment {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 20px;
+}
+
+
+.d-flex.copyrightAlign {
+  margin-left: 124px;
+  margin-right: 135px;
+}
 
 
 @media (max-width: 976px) {
@@ -380,9 +406,16 @@ button#btnSubscribe {
 
   .subscribe.row {
     padding-left: 0px;
+  } 
+  div#footerAlignment1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    padding-left: 0px;
   }
-  
-  
-
+  .d-flex.copyrightAlign {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
 }
