@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-contactus',
-  templateUrl: './contactus.component.html',
-  styleUrls: ['./contactus.component.scss']
+  selector: 'app-partner-and-logo',
+  templateUrl: './partner-and-logo.component.html',
+  styleUrls: ['./partner-and-logo.component.scss']
 })
-export class ContactusComponent {
+export class PartnerAndLogoComponent {
 
 
+  
   isNavbarCollapsed = true;
   isBodyBlurred = false;
   
@@ -15,5 +16,4 @@ export class ContactusComponent {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
     this.isBodyBlurred = !this.isBodyBlurred;
   }
-
 }

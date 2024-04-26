@@ -16,8 +16,9 @@ p {
     font-weight: bold;
 }
 
-.container {
-    padding: 54px;
+.container.text-center {
+    background: #f8a918;
+    padding: 36px;
 }
 
 .eventHeading {
@@ -124,3 +125,5 @@ ul.navbar-nav {
     align-items: center;
     justify-content: space-between;
 }
+
+

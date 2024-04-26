@@ -23,12 +23,21 @@ ul.navbar-nav {
 }
 
 img.topNavLogo {
-  height: 60px;
+  // height: 60px;
 }
+.list-group {
+  // list-style-image: url();
+  list-style-position: inside;}
 
 a.nav-link.text-white {
-  font-size: 19px;
+  font-size: 16px;
 }
+
+.imageAligned {
+  height: 20px;
+  border-radius: 4px;
+}
+
 
 .paragraphTwenty {
   font-size: 20px;
@@ -126,7 +135,10 @@ li.nav-item {
 /// 
 .thirdContainer {}
 
-
+.imageMarker {
+  display: flex;
+  justify-content: left;
+}
 
 .card {
   cursor: pointer;
@@ -178,7 +190,7 @@ li.nav-item {
 }
 
 .card-text {
-  display: none;
+  display: block;
 }
 
 .card-hover:hover .card-text {
@@ -207,7 +219,30 @@ li.nav-item {
 
 
 
-///////Mobile Download//
+.BoatContainer{
+  background-image: linear-gradient(to right top, #f39310, #e8b448, #e1cf7d, #e3e6b4, #f2f8e8);
+}
+
+.regattaContainer{
+  background-image: linear-gradient(to left bottom, #f2f8e8, #dbdeb1, #cfc079, #c9a043, #c77b05);
+}
+
+#CardAlign {
+    display: flex;
+    align-items: center;
+}
+
+.list-unstyled  {
+  padding-left: 0;
+  list-style: none;
+  color: white;
+}
+ .list-group{
+color: white;
+list-style: none;
+}
+
+///////Mobile Download////
 .appstore {
   width: 74%;
   padding-left: 0px;
@@ -301,7 +336,7 @@ button#btnSubscribe {
   margin-top: 7px;
 }
 
-.d-flex {
+#copyrightAlign {
   display: flex !important;
   padding: 10px;
   align-items: center;
@@ -373,7 +408,7 @@ div#footerAlignment1 {
 
 
 .subscribe.row {
-  padding-left: 84px;
+  padding-left: 60px;
 }
 
 
@@ -389,7 +424,19 @@ div#footerAlignment1 {
   margin-left: 124px;
   margin-right: 135px;
 }
-
+.form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: revert-layer;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: baseline;
+  justify-content: center;
+}
 
 @media (max-width: 976px) {
   img#carouselImage {

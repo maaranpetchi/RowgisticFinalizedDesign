@@ -14,12 +14,14 @@ import { ContactusComponent } from './Components/contactus/contactus.component';
 
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { PartnerAndLogoComponent } from './Components/partner-and-logo/partner-and-logo.component';
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     ContactusComponent,
-    TermsandconditionComponent
+    TermsandconditionComponent,
+    PartnerAndLogoComponent
   ],
   imports: [
     BrowserModule,
