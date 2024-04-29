@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+    font-weight: bold;
+}
+
+.container {
+    padding: 0px 54px 0px 54px;
+}
+
+.eventHeading {
+    text-align: center;
+}
+
+
+a#navDownload1 {
+    background: #F36820;
+    border-radius: 50px;
+    padding: 12px 30px 12px 30px;
+    color: white;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+div#downloadSection {
+    line-height: 40px;
+}
+
+.downloadText {
+    padding-bottom: 12px;
+    font-size: 36px;
+    background: -webkit-linear-gradient(#F36820, #DF2269);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+i {
+    padding-right: 20px;
+    /* padding: 14px; */
+}
+
+.imageSetting {
+    background-size: contain;
+    height: 109px;
+    background-image: url(../../../assets/Ornament.png);
+    background-repeat: no-repeat;
+}
+
+.back {
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background-color: #e8702c;
+    border-color: #f69b66;
+    width: 26%;
+    padding: 11px;
+}
+
+.back:hover {
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background-color: #f38648;
+    border-color: #f69b66;
+    width: 26%;
+    padding: 11px;
+}
+
+
+.blur-body {
+    filter: blur(5px);
+}
+
+.bg-blue {
+    background-color: #fa7708 !important;
+}
+
+
+
+li.nav-item {
+    padding-left: 31px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: #d8b26a;
+    margin-bottom: 15px;
+}
+
+ul.navbar-nav {
+    text-align: center;
+}
+
+.fixed-top {
+    /* position: fixed; */
+    /* top: 0; */
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+.card {
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+	margin-bottom: 20px;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	background-color: #cccdd0;
+}
+
+
+////////////ProfileCard//////
+.about-team {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 23px;
+
+}
+
+.AboutTeam {
+	padding: 39px 0px 72px 0px;
+}
+
+.about-team h1 {
+	font-size: 24px;
+	/* Adjust font size as needed */
+	text-decoration: none;
+	/* Remove default underline */
+	position: relative;
+}
+
+.about-team h1::after {
+	content: "";
+	display: block;
+	width: 40%;
+	/* Adjust underline length as needed */
+	height: 4px;
+	/* Adjust underline thickness as needed */
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	bottom: -6px;
+	/* Adjust underline position as needed */
+	left: 50px;
+}
+
+.about-team h1 span {
+	position: relative;
+	z-index: 1;
+	/* Keep text on top of the underline */
+}
+
+.about-team h1 span.underline {
+	text-decoration: line-through;
+	text-decoration-color: transparent;
+	/* Hide default underline */
+}
+
+.aboutTeamTitle {
+	  color: rgb(243 104 32);
+
+}
+
+.wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+.wrapper .card {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.wrapper .card:hover {
+	transform: rotate(-15deg);
+}
+
+.wrapper .card .image {
+	position: absolute;
+	inset: 0;
+	border-radius: 12px;
+	border: 4px solid rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .card .image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+.wrapper .card:hover .image img {
+	opacity: 0.5;
+}
+
+.wrapper .card .content {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(#fff2,#ffc107);
+
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 25px 25px rgba(248, 180, 44, 0.25);
+	backdrop-filter: blur(15px);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	scale: 0;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.wrapper .card:hover .content {
+	scale: 1;
+	opacity: 1;
+	transform: rotate(20deg);
+}
+
+.wrapper .card .content::before {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.wrapper .card .content h3 {
+	color: #fff;
+	font-size: 1.25em;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-align: center;
+	line-height: 0.8em;
+}
+
+.wrapper .card .content h3 span {
+	font-weight: 400;
+	font-size: 0.5em;
+}
+
+.wrapper .card .content ul {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.wrapper .card .content ul a {
+	color: #fff8;
+	font-size: 1.25em;
+	transition: 0.25s;
+}
+
+.wrapper .card .content ul a:hover {
+	color: #fff;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+  .list-unstyled li{
+    position: relative;
+    padding-left: 20px;
+    font-size: larger;
+    font-weight: normal;
+}
+  .list-unstyled li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #007bff;
+  }
+
+  .lead{
+    text-indent: 50px;
+    font-size: larger;
+    font-weight: normal;
+}

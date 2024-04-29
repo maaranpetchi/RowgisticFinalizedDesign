@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <a class="navbar-brand" routerLink="/Rowgistic"><img src="../../../assets/logo.png" class="topNavLogo"
+                    alt=""></a>
+            <button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" routerLink="/Rowgistic/AboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" routerLink="/Rowgistic/contactus">Contact Us</a>
+                    </li>
+                    <li class="nav-item" id="DownloadApp">
+                        <a class="nav-link text-white" href="#" id="navDownload1"> Download the app </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div [ngClass]="{'blur-body': isBodyBlurred}">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="AboutTeam" id="AboutSection">
+                        <div class="about-team">
+                            <h1 class="aboutTeamTitle">ABOUT US</h1>
+                        </div>
+                        <div class="container">
+                            <h2 class="mt-5">Rowgistic App</h2>
+                            <p class="lead"> Our CEO as a rower himself kept on coming to regattas and heard that
+                                certain things for some boats was missing. This was something that often turned out to
+                                start problems with available boats at regattas and created stress on the rowers. Also,
+                                when loading the trailers for big regattas, it was hard to keep track of what was
+                                already on the trailer or not, which lead to such problems. This inspired him to make
+                                Rowgistic, a digital solution which helps logistical problems within clubs. From this
+                                original idea, we expanded on this and thought, why not make an all-in-one app for
+                                rowing. This led to the app we offer today.</p>
+
+                            <h3 class="mt-4">Features:</h3>
+                            <ul class="list-unstyled">
+                                <li>The Rowgistic App is an all-in-one app for rowers.</li>
+                                <li>The app provides services for every functional part required for a club to organize
+                                    trainings and regattas.</li>
+                                <li>The app easily let you provide important information to the club members and make it
+                                    easily accessible.</li>
+                                <li>Maybe most importantly, it solves the original problem. This is done through our
+                                    quality check, which makes the crew of the boat check off the condition of different
+                                    parts of the boat, to make sure everything is in good condition and loaded on the
+                                    trailer among other things.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="about-team">
+                <h1 class="aboutTeamTitle">OUR TEAM</h1>
+            </div>
+            
+            <div class="wrapper">
+                <div class="card">
+                    
+                    <div class="image">
+                        <img src="../../../assets/Morten.jpeg" alt="" />
+
+                    </div>
+                    <div class="content">
+                        <h3>MORTEN ZAKARIASSEN<br /><span>CHAIRMAN</span></h3>
+                        <ul>
+                            <a href="#"> <i class="fab fa-linkedin"></i></a>
+                            <a href="#"> <i class="fab fa-instagram"></i></a>
+                            <a href="#"> <i class="fab fa-facebook-square"></i></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="../../../assets/Max.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>MAXIMIILAN ZAKARIASSEN<br /><span>CEO</span></h3>
+                        <ul>
+                            <a href="#"> <i class="fab fa-linkedin"></i></a>
+                            <a href="#"> <i class="fab fa-instagram"></i></a>
+                            <a href="#"> <i class="fab fa-facebook-square"></i></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="../../../assets/JR7_0708.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>DAMIR CAUSVIC<br /><span>COO</span></h3>
+                        <ul>
+                            <a href="#"> <i class="fab fa-linkedin"></i></a>
+                            <a href="#"> <i class="fab fa-instagram"></i></a>
+                            <a href="#"> <i class="fab fa-facebook-square"></i></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="../../../assets/roeland-profile.jpeg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h3>ROLELAND VAN NIEUWKREK<br /><span>CTO</span></h3>
+                        <ul>
+                            <a href="#"> <i class="fab fa-linkedin"></i></a>
+                            <a href="#"> <i class="fab fa-instagram"></i></a>
+                            <a href="#"> <i class="fab fa-facebook-square"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
