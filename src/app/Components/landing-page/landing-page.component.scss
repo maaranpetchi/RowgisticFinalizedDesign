@@ -32,12 +32,14 @@ img.topNavLogo {
 }
 
 a.nav-link.text-white {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .imageAligned {
-  height: 20px;
+  height: 25px;
   border-radius: 4px;
+  // filter: invert(1);
+
 }
 
 .paragraphTwenty {
@@ -58,8 +60,9 @@ a#navDownload {
 }
 
 .card {
-  border: 1px solid white;
-  border-radius: 12px;
+  // border: 1px solid white;
+  // border-radius: 12px;
+  border:none
 }
 
 a#navDownload1 {
@@ -95,7 +98,7 @@ a#navDownload1 {
 }
 
 #carouselImage {
-  filter: brightness(0.5);
+   filter: brightness(0.3);
 }
 
 .bg-light {
@@ -119,16 +122,25 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
+img.topNavLogo {
+  height: 69px;
+}
 li.nav-item {
   padding-left: 31px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-
+li.footer-item {
+  padding-left: 31px;
+  display: flex;
+  align-items: center;
+}
 ////feature section
 /// 
-.thirdContainer {}
+.thirdContainer {
+
+}
 
 .imageMarker {
   display: flex;
@@ -157,8 +169,14 @@ li.nav-item {
 
 .inline_elements{
   display: inline-flex;
-  padding-left: 13px;
-  font-size: larger;
+  padding-left: 14px;
+  font-size: large;
+  font-weight: 800;
+}
+.Event_elements{
+  display: inline-flex;
+  padding-left: 14px;
+  font-size:x-large;
   font-weight: bold;
 }
 
@@ -174,8 +192,8 @@ li.nav-item {
 .thirdContainer {
   // margin-bottom: 65px;
   padding-top: 20px;
-  background: url(../../../assets/FeatureBackground.png) no-repeat center;
-  background-size: cover;
+  background-image: linear-gradient(to left bottom, #ee314e, #f53f43, #f94e36, #fc5d28, #fd6c14) !important;
+    background-size: cover;
 }
 
 .eventHeading {
@@ -215,11 +233,11 @@ li.nav-item {
 }
 
 .BoatContainer {
-  background-image: linear-gradient(to right top, #f39310, #e8b448, #e1cf7d, #e3e6b4, #f2f8e8);
+  // background-image: linear-gradient(to right top, #ee314e, #f53f43, #f94e36, #fc5d28, #fd6c14);
 }
 
 .regattaContainer {
-  background-image: linear-gradient(to left bottom, #f2f8e8, #dbdeb1, #cfc079, #c9a043, #c77b05);
+  // background-image: linear-gradient(to left bottom, #ee314e, #f53f43, #f94e36, #fc5d28, #fd6c14);
 }
 
 #CardAlign {
@@ -227,8 +245,8 @@ li.nav-item {
   align-items: center;
 }
 
-.list-unstyled {
-  padding-left: 0;
+.list-unstyled{
+  padding-left: 57px;
   list-style: none;
   color: white;
 }
@@ -236,6 +254,14 @@ li.nav-item {
 .list-group {
   color: white;
   list-style: none;
+}
+
+.feature-flex{
+  display: flex !important;
+  padding: 0px;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
 }
 
 ///////Mobile Download////
@@ -445,4 +471,12 @@ div#footerAlignment1 {
     margin-left: 0px;
     margin-right: 0px;
   }
+  .card{
+    margin-top: 26px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: transparent;
+}
 }

@@ -11,18 +11,18 @@ h2,
 h3,
 h4,
 h5,
-span {
+span,
+p {
     font-weight: bold;
 }
 
 .container {
-    padding: 0px 54px 0px 54px;
+    padding: 54px;
 }
 
 .eventHeading {
     text-align: center;
 }
-
 
 a#navDownload1 {
     background: #F36820;
@@ -89,21 +89,41 @@ i {
 }
 
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img.topNavLogo {
+    height: 69px;
+}
 
 li.nav-item {
+    padding-left: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li.footer-item {
     padding-left: 31px;
     display: flex;
     align-items: center;
 }
 
 nav {
-    background-color: #d8b26a;
+    // background-color: #d8b26a;
     margin-bottom: 15px;
 }
 
 ul.navbar-nav {
     text-align: center;
 }
+
+.container-fluid.Rowgisitic {
+    padding-left: 95px;
+    padding-right: 25px;}
 
 .fixed-top {
     /* position: fixed; */
@@ -126,195 +146,253 @@ ul.navbar-nav {
     align-items: center;
     justify-content: space-between;
 }
+
 .card {
-	cursor: pointer;
-	transition: transform 0.2s ease-in-out;
-	margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .card:hover {
-	transform: scale(1.05);
-	background-color: #cccdd0;
+    transform: scale(1.05);
+    background-color: #cccdd0;
 }
 
 
 ////////////ProfileCard//////
 .about-team {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 23px;
 
 }
 
 .AboutTeam {
-	padding: 39px 0px 72px 0px;
+    padding: 39px 0px 72px 0px;
 }
 
 .about-team h1 {
-	font-size: 24px;
-	/* Adjust font size as needed */
-	text-decoration: none;
-	/* Remove default underline */
-	position: relative;
+    font-size: 24px;
+    /* Adjust font size as needed */
+    text-decoration: none;
+    /* Remove default underline */
+    position: relative;
 }
 
 .about-team h1::after {
-	content: "";
-	display: block;
-	width: 40%;
-	/* Adjust underline length as needed */
-	height: 4px;
-	/* Adjust underline thickness as needed */
-	background-color: rgb(0, 0, 0);
-	position: absolute;
-	bottom: -6px;
-	/* Adjust underline position as needed */
-	left: 50px;
+    content: "";
+    display: block;
+    width: 40%;
+    /* Adjust underline length as needed */
+    height: 4px;
+    /* Adjust underline thickness as needed */
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -6px;
+    /* Adjust underline position as needed */
+    left: 50px;
 }
 
 .about-team h1 span {
-	position: relative;
-	z-index: 1;
-	/* Keep text on top of the underline */
+    position: relative;
+    z-index: 1;
+    /* Keep text on top of the underline */
 }
 
 .about-team h1 span.underline {
-	text-decoration: line-through;
-	text-decoration-color: transparent;
-	/* Hide default underline */
+    text-decoration: line-through;
+    text-decoration-color: transparent;
+    /* Hide default underline */
 }
 
 .aboutTeamTitle {
-	  color: rgb(243 104 32);
+    color: rgb(243 104 32);
 
 }
 
+////////////////Downlaod the app last//////
+.about-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 23px;
+
+}
+
+.AboutTeam {
+    padding: 39px 0px 72px 0px;
+}
+
+.about-download h1 {
+    font-size: 24px;
+    text-decoration: none;
+    position: relative;
+}
+
+.about-download h1::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -6px;
+    left: 50px;
+}
+
+.about-download h1 span {
+    position: relative;
+    z-index: 1;
+}
+
+.about-download h1 span.underline {
+    text-decoration: line-through;
+    text-decoration-color: transparent;
+}
+
+.aboutdownloadTitle {
+    color: rgb(243 104 32);
+
+}
+
+////////////////Downlaod the app last//////
 .wrapper {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 40px;
-	flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .wrapper .card {
-	position: relative;
-	width: 200px;
-	height: 200px;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-	transition: 0.5s;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .wrapper .card:hover {
-	transform: rotate(-15deg);
+    transform: rotate(-15deg);
 }
 
 .wrapper .card .image {
-	position: absolute;
-	inset: 0;
-	border-radius: 12px;
-	border: 4px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    border: 4px solid rgba(0, 0, 0, 0.2);
 }
 
 .wrapper .card .image img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 10px;
-	transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
 .wrapper .card:hover .image img {
-	opacity: 0.5;
+    opacity: 0.5;
 }
 
 .wrapper .card .content {
-	position: absolute;
-	inset: 0;
-	background: linear-gradient(#fff2,#ffc107);
-
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	box-shadow: 0 25px 25px rgba(248, 180, 44, 0.25);
-	backdrop-filter: blur(15px);
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	scale: 0;
-	opacity: 0;
-	transition: 0.5s;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#fff2, #f36820);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(248, 180, 44, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    scale: 0;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .wrapper .card:hover .content {
-	scale: 1;
-	opacity: 1;
-	transform: rotate(20deg);
+    scale: 1;
+    opacity: 1;
+    transform: rotate(20deg);
 }
 
 .wrapper .card .content::before {
-	position: absolute;
-	content: "";
-	bottom: 0;
-	width: 100%;
-	height: 40px;
-	background: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.height {
+    height: 20px;
 }
 
 .wrapper .card .content h3 {
-	color: #fff;
-	font-size: 1.25em;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	text-align: center;
-	line-height: 0.8em;
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 0.8em;
 }
 
+.DownloadApp {
+    padding-top: 35px;
+    padding-bottom: 16px;
+}
+
+
 .wrapper .card .content h3 span {
-	font-weight: 400;
-	font-size: 0.5em;
+    font-weight: 400;
+    font-size: 0.5em;
 }
 
 .wrapper .card .content ul {
-	position: absolute;
-	bottom: 5px;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	gap: 15px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .wrapper .card .content ul a {
-	color: #fff8;
-	font-size: 1.25em;
-	transition: 0.25s;
+    color: #fff8;
+    font-size: 1.25em;
+    transition: 0.25s;
 }
 
 .wrapper .card .content ul a:hover {
-	color: #fff;
+    color: #fff;
 }
 
 .list-unstyled {
     padding-left: 0;
     list-style: none;
-  }
-  .list-unstyled li{
+}
+
+.list-unstyled li {
     position: relative;
     padding-left: 20px;
     font-size: larger;
     font-weight: normal;
 }
-  .list-unstyled li::before {
+
+.list-unstyled li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -322,11 +400,212 @@ ul.navbar-nav {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #007bff;
-  }
+    background-color: #F36820;
+}
 
-  .lead{
-    text-indent: 50px;
+.list-styled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-styled li {
+    position: relative;
+    padding-left: 20px;
     font-size: larger;
     font-weight: normal;
 }
+
+.list-styled li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    // background-color: #F36820;
+}
+
+
+.lead {
+    text-indent: 50px;
+    text-align: justify;
+    font-size: larger;
+    font-weight: normal;
+}
+
+.feature_padding {
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 976px) {
+
+.container-fluid.Rowgisitic{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+}
+
+////////////Footer//////
+.footer {
+    background: #E7E7E7;
+    padding: 2rem 0;
+  }
+  
+  #subscribe {
+    border-radius: 33px;
+    padding: 0.75rem 2rem;
+    margin-bottom: 0;
+  }
+  
+  .btn-primary {
+    border-radius: 33px;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  button#btnSubscribe {
+    background-color: orange;
+    border: none;
+  }
+  
+  .footerHeader {
+    text-transform: uppercase;
+    padding-left: 31px;
+    padding-bottom: 15px;
+    font-size: 12px;
+  }
+  
+  // #align {
+  //   text-align: justify;
+  // }
+  button#btnSubscribe {
+    background-color: #F36820;
+    border: none;
+    margin-top: 7px;
+  }
+  
+  #copyrightAlign {
+    display: flex !important;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .py-5 {
+    padding-top: 0rem !important;
+    padding-left: 11px;
+    padding-bottom: 0rem !important;
+  }
+  
+  .letter {
+    padding: 14px;
+    line-height: 36px;
+  }
+  
+  .d-flex {
+    display: flex !important;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .copyRights {
+    background: #e7e7e7;
+    border-top: 1px solid #bcafaf;
+    /* padding: 1px; */
+  }
+  
+  .image1 {
+    padding-bottom: 10px;
+  }
+  
+  .container-fluid.footer-fluid {
+    padding-left: 70px;
+  }
+  
+  #Feature {
+    display: flex;
+    justify-content: center;
+  }
+  
+  // #footerAlignment {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+  // .subscribe.row {
+  //   padding-left: 88px;
+  // }
+  div#footerAlignment1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 32px;
+    // padding-top: 15px;
+  }
+  
+  .subscribe.row {
+    padding-left: 60px;
+  }
+  
+  #footerAlignment {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 20px;
+  }
+  
+  .d-flex.copyrightAlign {
+    margin-left: 124px;
+    margin-right: 135px;
+  }
+  
+  .form-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: revert-layer;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: baseline;
+    justify-content: center;
+  }
+  
+  @media (max-width: 976px) {
+    img#carouselImage {
+      height: 440px;
+    }
+  
+    h4 {
+      font-size: 22px;
+    }
+  
+    .paragraphTwenty {
+      font-size: 16px;
+    }
+  
+    .subscribe.row {
+      padding-left: 0px;
+    }
+  
+    div#footerAlignment1 {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 15px;
+      padding-left: 0px;
+    }
+  
+    .d-flex.copyrightAlign {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .card{
+      margin-top: 26px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+      margin-bottom: 25px;
+      padding: 20px;
+      background-color: transparent;
+  }
+  }

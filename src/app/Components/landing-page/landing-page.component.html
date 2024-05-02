@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--divinectorweb.com-->
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta charset="UTF-8">
@@ -18,34 +17,32 @@
 	<link rel="stylesheet" type="text/css"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
-
 <body>
 	<!-- Navbar  -->
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3"
-		[ngClass]="{'bg-light': !isScrolled, 'bg-blue': isScrolled}">
-		<div class="container">
-			<a class="navbar-brand" href="#"><img src="../../../assets/logo.png" class="topNavLogo" alt=""></a>
-			<button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<div class="mx-auto"></div>
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link text-white" routerLink="/Rowgistic/AboutUs">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-white" routerLink="/Rowgistic/contactus">Contact Us</a>
-					</li>
-					<li class="nav-item" id="DownloadApp">
-						<a class="nav-link text-white" href="#" id="navDownload1"> Download the app </a>
-					</li>
-				</ul>
+	[ngClass]="{'bg-light': !isScrolled, 'bg-blue': isScrolled}">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="../../../assets/logo.png" class="topNavLogo" alt=""></a>
+		<button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
+			data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<div class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link text-white" routerLink="/Rowgistic/AboutUs">About Us</a>
+	</li>
+				<li class="nav-item">
+					<a class="nav-link text-white" routerLink="/Rowgistic/contactus">Contact Us</a>
+				</li>
+				<li class="nav-item" id="DownloadApp">
+					<a class="nav-link text-white" href="#" id="navDownload1"> Download the app </a>
+				</li>
 			</div>
 		</div>
-	</nav>
+	</div>
+</nav>
 	<div [ngClass]="{'blur-body': isBodyBlurred}">
 		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 			<div class="carousel-indicators">
@@ -69,10 +66,14 @@
 					class="list-inline-item" aria-label="Slide 5">
 					<span class="visually-hidden">Slide 5</span>
 				</button>
+				<button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="5"
+					class="list-inline-item" aria-label="Slide 6">
+					<span class="visually-hidden">Slide 6</span>
+				</button>
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active" data-bs-interval="10000">
-					<img src="../../../assets/Picture1.png" class="d-block w-100" alt="..." id="carouselImage">
+					<img src="../../../assets/Rowing1.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
 						<h4 class="animated bounceInRight" style="animation-delay: 1s;;">The rowing app to suit all your
 							logistical needs</h4>
@@ -80,7 +81,7 @@
 					</div>
 				</div>
 				<div class="carousel-item" data-bs-interval="10000">
-					<img src="../../../assets/Picture2.png" class="d-block w-100" alt="..." id="carouselImage">
+					<img src="../../../assets/Rowing2.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
 						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Easier Logistics, Easier Rowing
 						</h4>
@@ -89,16 +90,15 @@
 					</div>
 				</div>
 				<div class="carousel-item" data-bs-interval="10000">
-					<img src="../../../assets/Picture3.png" class="d-block w-100" alt="..." id="carouselImage">
+					<img src="../../../assets/Rowing3.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
-						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Autopicking of boats for crews
+						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Club Specific Customization
 						</h4>
-						<p class="animated bounceInLeft paragraphTwenty" style="animation-delay:2s">Choose a crew and
-							let the app choose the best fit according to weight class and the regatta time schedule.</p>
+						<p class="animated bounceInLeft paragraphTwenty" style="animation-delay:2s">Enroll your club members and get started!</p>
 					</div>
 				</div>
 				<div class="carousel-item" data-bs-interval="10000">
-					<img src="../../../assets/Picture4.png" class="d-block w-100" alt="..." id="carouselImage">
+					<img src="../../../assets/Rowing4.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
 						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Set up for managing of multiple
 							clubs.</h4>
@@ -108,11 +108,17 @@
 					</div>
 				</div>
 				<div class="carousel-item" data-bs-interval="10000">
-					<img src="../../../assets/Picture5.png" class="d-block w-100" alt="..." id="carouselImage">
+					<img src="../../../assets/Rowing5.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
-						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Clubization</h4>
-						<p class="animated bounceInLeft paragraphTwenty" style="animation-delay:2s">Let's join with us
-							to experience the real adventure.</p>
+						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Easy To Use Event Manager</h4>
+						<p class="animated bounceInLeft paragraphTwenty" style="animation-delay:2s">Take back control of your tasks and ensure your team knows.</p>
+					</div>
+				</div>
+				<div class="carousel-item" data-bs-interval="10000">
+					<img src="../../../assets/Rowing6.png" class="d-block w-100" alt="..." id="carouselImage">
+					<div class="carousel-caption  .d-block">
+						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Autopicking Of  Boats For Crews</h4>
+						<p class="animated bounceInLeft paragraphTwenty" style="animation-delay:2s">Choose a crew and let the app choose the best fitting boat according to weight class and the time schedule.</p>
 					</div>
 				</div>
 			</div>
@@ -127,9 +133,9 @@
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-		<div class="thirdContainer" data-aos="fade-up" data-aos-duration="4000">
+		<div class="thirdContainer" data-aos="fade-up" data-aos-duration="4000" id="featureSection" #featureSection>
 			<div class="container">
-				<div class="eventHeading">
+				<div class="eventHeading" >
 					<h3>Feature of Rowgistic</h3>
 					<p>Unlock the waves of possibility. Dive into events, boats, and more. Your mobile adventure
 						awaits!.
@@ -138,91 +144,105 @@
 				<div class="row" id="Feature">
 					<div class="col-md-6 mb-4" id="CardAlign" data-aos="fade-right" data-aos-duration="4000">
 						<div class="card">
-							<div class="card-body ">
-								<h5 class="card-title">Events</h5>
-								<ul class="list-group">
-										<li>
-											<img src="../../../assets/boatIconUL.png" class="img-fluid imageAligned" alt=""
-												srcset="">
-											<h3 class="inline_elements">Events</h3>
-											<ul class="list-unstyled bullet-list">
-												<li>  Control your trainings, Regattas and club gatherings in a live updated
-													calendar.</li>
-											</ul>
-										</li>
-
-									<li>
-										<img src="../../../assets/boatIconUL.png" class="img-fluid imageAligned" alt=""
-											srcset="">
-										<h3 class="inline_elements">Training events</h3>
-										<ul class="list-unstyled bullet-list">
+							<div class="card-body">
+								<div class="feature-flex flex-column">
+									<div class="feature-flex flex-wrap w-100">
+										<div class="feature-flex m-2"> 
+											<h1 class="Event_elements feature-flex align-items-center">Events</h1>
+										</div>
+										<ul class="list-unstyled bullet-list w-100">
+											<li> Control your trainings, Regattas and club gatherings in a live updated
+												calendar.</li>
+										</ul>
+									</div>
+									<div class="feature-flex flex-wrap w-100">
+										<div class="feature-flex m-2"> <img src="../../../assets/boatIconUL.png"
+												class="img-fluid imageAligned" alt="" srcset="">
+											<h3 class="inline_elements feature-flex align-items-center">Training events</h3>
+										</div>
+										<ul class="list-unstyled bullet-list w-100">
 											<li> Find current training programs</li>
 											<li> and log them directly into the apps integrated logging feature.</li>
 										</ul>
-									</li>
-									<li>
-										<img src="../../../assets/boatIconUL.png" class="img-fluid imageAligned" alt=""
-											srcset="">
-										<h3 class="inline_elements">Complete view of all events</h3>
-										<ul class="list-unstyled bullet-list">
+									</div>
+									<div class="feature-flex flex-wrap w-100">
+										<div class="feature-flex m-2"> <img src="../../../assets/boatIconUL.png"
+												class="img-fluid imageAligned" alt="" srcset="">
+											<h3 class="inline_elements feature-flex align-items-center">Complete view of all
+												events</h3>
+										</div>
+										<ul class="list-unstyled bullet-list w-100">
 											<li> Choose to use a list or calendar view to display your events.</li>
 										</ul>
-									</li>
-									<li>
-										<img src="../../../assets/boatIconUL.png" class="img-fluid imageAligned" alt=""
-											srcset="">
-										<h3 class="inline_elements">Filter events</h3>
-										<ul class="list-unstyled bullet-list">
+									</div>
+									<div class="feature-flex flex-wrap w-100">
+										<div class="feature-flex m-2"> <img src="../../../assets/boatIconUL.png"
+												class="img-fluid imageAligned" alt="" srcset="">
+											<h3 class="inline_elements feature-flex align-items-center">Filter events</h3>
+										</div>
+										<ul class="list-unstyled bullet-list w-100">
 											<li> Filter the different kinds of events according to event types</li>
 										</ul>
-									</li>
-								</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="4000">
 						<div class="image-container">
-							<img src="../../../assets/Events.png" alt="Event Image" class="img-fluid">
+							<img src="../../../assets/featureEvents.png" alt="Event Image" class="img-fluid">
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="BoatContainer" data-aos="fade-up" data-aos-duration="4000">
+
+		<div class="BoatContainer" data-aos="fade-up" data-aos-duration="4000" id="feature">
 			<div class="container">
 				<div class="row" id="Feature">
-					<div class="col-md-6 mb-4" id="CardAlign" data-aos="fade-right" data-aos-duration="4000">
-						<div class="card">
-							<div class="card-body card-hover">
-								<h5 class="card-title">Fleet</h5>
-								<ul class="list-group">
-									<li>
-										List of boats
-										<ul class="list-unstyled">
-											<li> See the club's boats and current whereabouts and condition.</li>
-										</ul>
-									</li>
-									<li>
-										Reserve boats
-										<ul class="list-unstyled">
-											<li> Reserve specific boats for your workouts.</li>
-										</ul>
-									</li>
-									<li>
-										Permissions
-										<ul class="list-unstyled">
-											<li> Boats can be assigned permissions which restrict who can use a specific
-												boat.</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="4000">
+					<div class="col-md-6 mb-4"  data-aos="fade-left"   data-aos-duration="4000">
 						<div class="image-container">
 							<img src="../../../assets/Boats.png" alt="Boats Image" class="img-fluid">
 						</div>
+					</div>
+					<div class="col-md-6 mb-4" id="CardAlign" data-aos="fade-right" data-aos-duration="4000">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title feature-flex justify-content-center">Fleet</h5>
+								<div class="feature-flex flex-column">
+									<div class="feature-flex flex-wrap w-100">
+										<div class="feature-flex m-2"> <img src="../../../assets/boatIconUL.png"
+												class="img-fluid imageAligned" alt="" srcset="">
+											<h3 class="inline_elements feature-flex align-items-center">List of boats</h3>
+										</div>
+										<ul class="list-unstyled bullet-list w-100">
+											<li>  See the club's boats and current whereabouts and condition.</li>
+										</ul>
+									</div>
+									<div class="feature-flex flex-wrap w-100">
+										<div class="feature-flex m-2"> <img src="../../../assets/boatIconUL.png"
+												class="img-fluid imageAligned" alt="" srcset="">
+											<h3 class="inline_elements feature-flex align-items-center">Reserve boats
+											</h3>
+										</div>
+										<ul class="list-unstyled bullet-list w-100">
+											<li> Reserve specific boats for your workouts.</li>
+										</ul>
+									</div>
+									<div class="feature-flex flex-wrap w-100">
+										<div class="feature-flex m-2"> <img src="../../../assets/boatIconUL.png"
+												class="img-fluid imageAligned" alt="" srcset="">
+											<h3 class="inline_elements feature-flex align-items-center">Permissions</h3>
+										</div>
+										<ul class="list-unstyled bullet-list w-100">
+											<li> Boats can be assigned permissions which restrict who can use a specific
+												boat.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					
 					</div>
 				</div>
 			</div>
@@ -232,41 +252,53 @@
 				<div class="row" id="Feature">
 					<div class="col-md-6 mb-4" id="CardAlign" data-aos="fade-right" data-aos-duration="4000">
 						<div class="card">
-							<div class="card-body card-hover">
-								<h5 class="card-title">Regatta</h5>
-								<ul class="list-group">
-									<li>
-										All information in one place
-										<ul class="list-unstyled">
-											<li>Find all information about the regatta in one place.</li>
+							<div class="card-body">
+								<h5 class="card-title feature-flex justify-content-center">Regatta</h5>
+								<div class="feature-flex flex-column">
+									<div class="feature-flex flex-wrap w-100">
+										<div class="feature-flex m-2"> <img src="../../../assets/boatIconUL.png"
+												class="img-fluid imageAligned" alt="" srcset="">
+											<h3 class="inline_elements feature-flex align-items-center">All information in one place											</h3>
+										</div>
+										<ul class="list-unstyled bullet-list w-100">
+											<li>  Find all information about the regatta in one place.</li>
 										</ul>
-									</li>
-									<li>
-										Sign up
-										<ul class="list-unstyled">
+									</div>
+									<div class="feature-flex flex-wrap w-100">
+										<div class="feature-flex m-2"> <img src="../../../assets/boatIconUL.png"
+												class="img-fluid imageAligned" alt="" srcset="">
+											<h3 class="inline_elements feature-flex align-items-center">Sign up
+											</h3>
+										</div>
+										<ul class="list-unstyled bullet-list w-100">
 											<li>Sign up for the regatta directly in the app.</li>
 										</ul>
-									</li>
-									<li>
-										Boat recommendations
-										<ul class="list-unstyled">
-											<li>When assigning boats for a specific crew, the app will give a
+									</div>
+									<div class="feature-flex flex-wrap w-100">
+										<div class="feature-flex m-2"> <img src="../../../assets/boatIconUL.png"
+												class="img-fluid imageAligned" alt="" srcset="">
+											<h3 class="inline_elements feature-flex align-items-center">Boat recommendations											</h3>
+										</div>
+										<ul class="list-unstyled bullet-list w-100">
+											<li> When assigning boats for a specific crew, the app will give a
 												recommendation of the best fitting boat according to crew weight and the
 												regatta's time schedule.</li>
 										</ul>
-									</li>
-								</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="4000">
 						<div class="image-container">
-							<img src="../../../assets/Regatta.png" alt="Regatta Image" class="img-fluid">
+							<img src="../../../assets/featureRegatta.png" alt="Regatta Image" class="img-fluid">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+
 		<div class="container-fluid" data-aos="fade-up" data-aos-duration="4000">
 			<div class="row" id="mobileDownloadBackground">
 			</div>
@@ -277,10 +309,12 @@
 					<img src="../../../assets/DownloadQRCode.png" alt="" class="qrcode img-fluid">
 				</div>
 				<div class="col-md-4">
-					<img src="../.././../assets/MobileSection.png" class="img-fluid mobilePic" alt="">
+					<img src="../.././../assets/DownloadRowing.png" class="img-fluid mobilePic" alt="">
 				</div>
 			</div>
 		</div>
+
+		
 		<div class="footer" data-aos="fade-down" data-aos-duration="4000">
 			<div class="container-fluid">
 				<footer class="py-5">
@@ -313,32 +347,33 @@
 						<div class="col-md-2 col-6" id="align">
 							<h5 class="footerHeader">Explore</h5>
 							<ul class="nav flex-column">
-								<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Institution</a>
+								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Institution</a>
 								</li>
-								<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Download the
+								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Download the
 										app</a></li>
 							</ul>
 						</div>
 						<div class="col-md-2 col-6" id="align">
 							<h5 class="footerHeader">About</h5>
 							<ul class="nav flex-column">
-								<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About
+								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">About
 										Rowgistic</a></li>
-								<li class="nav-item mb-2"><a routerLink="/Rowgistic/contactus"
+								<li class="footer-item mb-2"><a routerLink="/Rowgistic/contactus"
 										class="nav-link p-0 text-muted">Contact US</a></li>
-								<li class="nav-item mb-2"><a routerLink="/Rowgistic/Partners"
+								<li class="footer-item mb-2"><a routerLink="/Rowgistic/Partners"
 										class="nav-link p-0 text-muted">Partners and clubs</a>
 								</li>
-								<li class="nav-item mb-2"><a (click)="navigatetoTerms()" style="cursor: pointer;"
+								<li class="footer-item mb-2"><a (click)="navigatetoTerms()" style="cursor: pointer;"
 										class="nav-link p-0 text-muted">Terms of service</a></li>
 							</ul>
 						</div>
 						<div class="col-md-2 col-6" id="align">
 							<h5 class="footerHeader">Resources</h5>
 							<ul class="nav flex-column">
-								<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-								<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Articles</a></li>
-								<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+								<li class="footer-item mb-2">    <a  class="nav-link p-0 text-muted" (click)="scrollToFeatureSection()" #featuresLink>Features</a>
+								</li>
+								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Articles</a></li>
+								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
 							</ul>
 						</div>
 					</div>
@@ -376,5 +411,4 @@
 		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
 		crossorigin="anonymous"></script>
 </body>
-
 </html>

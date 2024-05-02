@@ -21,31 +21,31 @@
 
 <body>
 
-    <nav class="navbar  navbar-expand-lg navbar-dark p-md-3">
-    <div class="container">
-        <a class="navbar-brand" routerLink="/Rowgistic"><img src="../../../assets/logo.png" class="topNavLogo" alt=""></a>
-        <button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="mx-auto"></div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-white" routerLink="/Rowgistic/AboutUs">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" routerLink="/Rowgistic/contactus">Contact Us</a>
-                </li>
-                <li class="nav-item" id="DownloadApp">
-                    <a class="nav-link text-white" href="#" id="navDownload1"> Download the app </a>
-                </li>
-            </ul>
+     <nav class="navbar  navbar-expand-lg navbar-dark p-md-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" routerLink="/Rowgistic"><img src="../../../assets/logo.png" class="topNavLogo" alt=""></a>
+            <button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" routerLink="/Rowgistic/AboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" routerLink="/Rowgistic/contactus">Contact Us</a>
+                    </li>
+                    <li class="nav-item" id="DownloadApp">
+                        <a class="nav-link text-white" href="#" id="navDownload1"> Download the app </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 <div [ngClass]="{'blur-body': isBodyBlurred}">
 
     <div class="contactSection">
@@ -73,6 +73,88 @@
           </div>
         </div>
       </div>
+
+      	
+		<div class="footer" data-aos="fade-down" data-aos-duration="4000">
+			<div class="container-fluid">
+				<footer class="py-5">
+					<div class="row" id="footerAlignment">
+						<div class="subscribe row">
+							<div class="letter col-md-6 col-12">
+								<h5>Subscribe to our newsletter</h5>
+								<p>Monthly digest of whats new and exciting from us.</p>
+							</div>
+							<div class="text col-md-6 col-12">
+								<form class="form-inline">
+									<input type="text" name="Subscribe" id="subscribe" class="form-control mr-2"
+										placeholder="Enter your email">
+									<button type="button" class="btn btn-primary" id="btnSubscribe">Subscribe</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="row" id="footerAlignment1">
+						<div class="col-md-2 col-6" id="align">
+							<div class="downloadImages">
+								<div class="image1">
+									<img src="../../../assets/AppleStore.png" alt="" class="img-fluid">
+								</div>
+								<div class="image2">
+									<img src="../../../assets/playstore.png" alt="" class="img-fluid">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-6" id="align">
+							<h5 class="footerHeader">Explore</h5>
+							<ul class="nav flex-column">
+								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Institution</a>
+								</li>
+								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Download the
+										app</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-6" id="align">
+							<h5 class="footerHeader">About</h5>
+							<ul class="nav flex-column">
+								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">About
+										Rowgistic</a></li>
+								<li class="footer-item mb-2"><a routerLink="/Rowgistic/contactus"
+										class="nav-link p-0 text-muted">Contact US</a></li>
+								<li class="footer-item mb-2"><a routerLink="/Rowgistic/Partners"
+										class="nav-link p-0 text-muted">Partners and clubs</a>
+								</li>
+								<li class="footer-item mb-2"><a (click)="navigatetoTerms()" style="cursor: pointer;"
+										class="nav-link p-0 text-muted">Terms of service</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-6" id="align">
+							<h5 class="footerHeader">Resources</h5>
+							<ul class="nav flex-column">
+								<li class="footer-item mb-2">    <a  class="nav-link p-0 text-muted" routerLink="/Rowgistic">Features</a>
+								</li>
+								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Articles</a></li>
+								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<div class="copyRights">
+			<div class="d-flex copyrightAlign">
+				<p>&copy; 2024 Rowgistic. All rights reserved.</p>
+				<ul class="list-unstyled d-flex">
+					<li class="ms-3"><a class="link-dark" href="https://www.facebook.com/profile.php?id=61557922531506">
+							<i class="fab fa-facebook-f"></i>
+						</a></li>
+					<li class="ms-3"><a class="link-dark" href="https://twitter.com/Rowgistic"><i
+								class="fa-brands fa-x-twitter"></i>
+						</a></li>
+					<li class="ms-3"><a class="link-dark" href="https://www.linkedin.com/company/rowgistic/"><i
+								class="fab fa-linkedin-in"></i></a></li>
+				</ul>
+			</div>
+		</div>
  </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>

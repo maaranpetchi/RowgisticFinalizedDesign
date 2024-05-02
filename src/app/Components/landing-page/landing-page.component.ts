@@ -74,12 +74,12 @@ export class LandingPageComponent implements OnInit {
   }
 
 
-  scrollToSection(section: string): void {
-    const element = this.elRef.nativeElement.querySelector(`#${section}`);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-    }
-  }
+  // scrollToSection(section: string): void {
+  //   const element = this.elRef.nativeElement.querySelector(`#${section}`);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior:"instant", block: 'end' });
+  //   }
+  // }
 
 
   isScrolled: boolean = false;
@@ -89,7 +89,14 @@ export class LandingPageComponent implements OnInit {
 
   @HostListener('window:scroll', [])
 
+  @ViewChild('featureSection')
+  featureSection!: ElementRef;
 
+  scrollToFeatureSection(): void {
+    if (this.featureSection) {
+      this.featureSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   showImage: boolean = false;
   selectedImage: string = '';
