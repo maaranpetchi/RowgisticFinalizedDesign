@@ -74,7 +74,7 @@
 				</button>
 			</div>
 			<div class="carousel-inner">
-				<div class="carousel-item active" data-bs-interval="10000">
+				<div class="carousel-item active" data-bs-interval="5000">
 					<img src="../../../assets/Rowing1.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
 						<h4 class="animated bounceInRight" style="animation-delay: 1s;;">The rowing app to suit all your
@@ -82,7 +82,7 @@
 						<br>
 					</div>
 				</div>
-				<div class="carousel-item" data-bs-interval="10000">
+				<div class="carousel-item" data-bs-interval="5000">
 					<img src="../../../assets/Rowing2.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
 						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Easier Logistics, Easier Rowing
@@ -91,7 +91,7 @@
 						<br>
 					</div>
 				</div>
-				<div class="carousel-item" data-bs-interval="10000">
+				<div class="carousel-item" data-bs-interval="7000">
 					<img src="../../../assets/Rowing3.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
 						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Club Specific Customization
@@ -100,7 +100,7 @@
 							members and get started!</p>
 					</div>
 				</div>
-				<div class="carousel-item" data-bs-interval="10000">
+				<div class="carousel-item" data-bs-interval="7000">
 					<img src="../../../assets/Rowing4.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
 						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Set up for managing of multiple
@@ -110,7 +110,7 @@
 							information and events.</p>
 					</div>
 				</div>
-				<div class="carousel-item" data-bs-interval="10000">
+				<div class="carousel-item" data-bs-interval="7000">
 					<img src="../../../assets/Rowing5.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
 						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Easy To Use Event Manager</h4>
@@ -118,7 +118,7 @@
 							your tasks and ensure your team knows.</p>
 					</div>
 				</div>
-				<div class="carousel-item" data-bs-interval="10000">
+				<div class="carousel-item" data-bs-interval="7000">
 					<img src="../../../assets/Rowing6.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
 						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Autopicking Of Boats For Crews
@@ -365,15 +365,16 @@
 						<div class="col-md-2 col-6" id="align">
 							<h5 class="footerHeader">About</h5>
 							<ul class="nav flex-column">
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">About
+								<li class="footer-item mb-2"><a routerLink="/Rowgistic/AboutUs" class="nav-link p-0 text-muted">About
 										Rowgistic</a></li>
-								<li class="footer-item mb-2"><a routerLink="/Rowgistic/contactus"
-										class="nav-link p-0 text-muted">Contact US</a></li>
+								
 								<li class="footer-item mb-2"><a routerLink="/Rowgistic/Partners"
-										class="nav-link p-0 text-muted">Partners and clubs</a>
+										class="nav-link p-0 text-muted">Clubs & Potential Partners</a>
 								</li>
+								<li class="footer-item mb-2"><a routerLink="/Rowgistic/contactus"
+									class="nav-link p-0 text-muted">Contact US</a></li>
 								<li class="footer-item mb-2"><a (click)="navigatetoTerms()" style="cursor: pointer;"
-										class="nav-link p-0 text-muted">Terms of service</a></li>
+										class="nav-link p-0 text-muted">Terms & Conditions</a></li>
 							</ul>
 						</div>
 						<div class="col-md-2 col-6" id="align">
@@ -382,10 +383,10 @@
 								<li class="footer-item mb-2"> <a class="nav-link p-0 text-muted"
 										(click)="scrollToFeatureSection()" #featuresLink>Features</a>
 								</li>
-								<li class="footer-item mb-2"><a (click)="articles()" style="cursor: pointer;"
-										class="nav-link p-0 text-muted">Articles</a></li>
-								<li class="footer-item mb-2"><a class="nav-link p-0 text-muted" style="cursor: pointer;"
-										(click)="faqPopup()">FAQs</a></li>
+								<li class="footer-item mb-2"><a routerLink="/Rowgistic/Articles" style="cursor: pointer;"
+									class="nav-link p-0 text-muted">Articles</a></li>
+							<li class="footer-item mb-2"><a class="nav-link p-0 text-muted" style="cursor: pointer;"
+								routerLink="/Rowgistic/FAQ">FAQs</a></li>
 							</ul>
 						</div>
 					</div>

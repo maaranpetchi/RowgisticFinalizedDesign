@@ -16,8 +16,28 @@ p {
     font-weight: bold;
 }
 
-.container {
-    padding: 54px;
+// .container {
+//     padding: 54px;
+// }
+.expert-image{
+    padding-bottom: 20px;
+}
+.aboutUsSection {
+    padding: 70px;
+    background: #FFEEE3;
+}
+
+.center{
+    text-align: center;
+    padding-bottom: 40px;
+}
+  .expert-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+div#conatctHead {
+    padding-bottom: 23px;
 }
 
 .eventHeading {
@@ -33,13 +53,18 @@ a#navDownload1 {
     text-decoration: none;
 }
 
+.contactSection {
+    background-image: linear-gradient(to right top, #f26d1e, #f45f2c, #f35038, #f24143, #ee314e);
+  }
+  
+
 div#downloadSection {
     line-height: 40px;
 }
 
 .downloadText {
     padding-bottom: 12px;
-    font-size: 36px;
+    font-size: larger;
     background: -webkit-linear-gradient(#F36820, #DF2269);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -173,7 +198,7 @@ ul.navbar-nav {
 }
 
 .about-team h1 {
-    font-size: 24px;
+    font-size: medium;
     /* Adjust font size as needed */
     text-decoration: none;
     /* Remove default underline */
@@ -400,9 +425,19 @@ ul.navbar-nav {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #F36820;
+    // background-color: #F36820;
+}
+.downloadSect{
+    background: url(../../../assets/Ornament.png);
+    background-repeat: no-repeat;
+
 }
 
+.Abouttext{
+    background: -webkit-linear-gradient(#F36820, #DF2269);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .list-styled {
     padding-left: 0;
     list-style: none;

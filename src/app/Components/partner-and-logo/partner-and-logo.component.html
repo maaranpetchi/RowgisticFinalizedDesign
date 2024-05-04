@@ -20,28 +20,28 @@
 </head>
 
 <body>
+    <div class="contactSection">
 
     <nav class="navbar  navbar-expand-lg navbar-dark p-md-3">
         <div class="container-fluid">
-            <a class="navbar-brand" routerLink="/Rowgistic"><img src="../../../assets/logo.png" class="topNavLogo"
-                    alt=""></a>
+            <a class="navbar-brand" routerLink="/Rowgistic"><img src="../../../assets/White_logo.png" class="topNavLogo" alt=""></a>
             <button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="mx-auto"></div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-black" routerLink="/Rowgistic/contactus">About Us</a>
+                        <a class="nav-link text-white" routerLink="/Rowgistic/AboutUs">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" routerLink="/Rowgistic/contactus">Contact Us</a>
+                        <a class="nav-link text-white" routerLink="/Rowgistic/contactus">Contact Us</a>
                     </li>
                     <li class="nav-item" id="DownloadApp">
-                        <a class="nav-link text-white" href="#" id="navDownload1"> Download the app </a>
+                        <a class="nav-link " href="#" id="navDownload1"> Download the app </a>
                     </li>
                 </ul>
             </div>
@@ -49,214 +49,165 @@
     </nav>
     <div [ngClass]="{'blur-body': isBodyBlurred}">
 
-
-
-        <!-- <section class="section section-default mt-none mb-none">
-            <div class="container">
-                <h2 class="mb-sm"><strong>Clubs</strong> – We are here for you!</h2>
-
-                <strong>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="square-holder">
-                                <img alt="" src="../../../assets/NSR_logo.png" />
-                            </div>
-                        </div>
-                    </div>
-                </strong>
+        <div class="clubs_partner overflow-x-hidden">
+            <div class="row">
+              <div class="clubbing">
+                <h1 class="text-center text-white">Clubs & Partners</h1>
+                <h3 class="text-white text-center">Details of us and our Clubs & Partners are given in brief.</h3>
+              </div>
             </div>
+          </div>
 
-            <div class="container">
-                <h2 class="mb-sm"><strong>Potential Partners</strong> – We want you to support us!</h2>
-                <strong>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="square-holder">
-                                <img alt="" src="../../../assets/AVE_logo.png" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="square-holder">
-                                <img alt="" src="../../../assets/roseman_logo.png" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="square-holder">
-                                <img alt="" src="../../../assets/cucc_logo.png" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="square-holder">
-                                <img alt="" src="../../../assets/vega_logo.png" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="square-holder">
-                                <img alt="" src="../../../assets/syk_logo.png" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="square-holder">
-                                <img alt="" src="../../../assets/Emp_logo.png" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="square-holder">
-                                <img alt="" src="../../../assets/swift_logo.png" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="square-holder">
-                                <img alt="" src="../../../assets/filipi_logo.png" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="square-holder">
-                                <img alt="" src="../../../assets/win_logo.png" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="square-holder">
-                                <img alt="" src="../../../assets/hud_logo.png" />
-                            </div>
-                        </div>
-                    </div>
-                </strong>
+        <div class="text-center overflow-x-hidden">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3 mx-auto">
+                <h1 class="text-center text-white">Clubs</h1>
+                <h3 class="text-white text-center">We are here for you!</h3>
+                <img class="img-fluid" src="../../../assets/HEXNSR_logo.png" alt="HEXNSR logo">
+              </div>
             </div>
-        </section> -->
-        <ul class="honeycomb" lang="es">
-            <li class="honeycomb-cell">
-              <img class="honeycomb-cell__image" src="../../../assets/NSR_logo.png">
-              
-            </li>
-            </ul>
+          </div>
+
+          <div class="clubs_partner overflow-x-hidden">
+            <div class="row">
+              <div class="clubbing">
+                <h1 class="text-center text-white">Potential Partners </h1>
+                <h3 class="text-white text-center">We want you to support us! </h3>
+              </div>
+            </div>
+          </div>
 
         <ul class="honeycomb" lang="es">
             <li class="honeycomb-cell">
-              <img class="honeycomb-cell__image" src="../../../assets/AVE_logo.png">
+              <img class="honeycomb-cell__image" src="../../../assets/HexAvi_logo.png">
               
             </li>
             <li class="honeycomb-cell">
-              <img class="honeycomb-cell__image" src="../../../assets/roseman_logo.png">
+              <img class="honeycomb-cell__image" src="../../../assets/HexRose_logo.png">
               
             </li>
             <li class="honeycomb-cell">
-              <img class="honeycomb-cell__image" src="../../../assets/cucc_logo.png">
+              <img class="honeycomb-cell__image" src="../../../assets/HexCuc_logo.png">
               
             </li>
             <li class="honeycomb-cell">
-              <img class="honeycomb-cell__image" src="../../../assets/vega_logo.png">
+              <img class="honeycomb-cell__image" src="../../../assets/HexVega_logo.png">
               
             </li>
             <li class="honeycomb-cell">
-              <img class="honeycomb-cell__image" src="../../../assets/syk_logo.png">
+              <img class="honeycomb-cell__image" src="../../../assets/HexSyk_logo.png">
               
             </li>
             <li class="honeycomb-cell">
-              <img class="honeycomb-cell__image" src="../../../assets/Emp_logo.png">
+              <img class="honeycomb-cell__image" src="../../../assets/HexEmp_logo.png">
               
             </li>
             <li class="honeycomb-cell">
-              <img class="honeycomb-cell__image" src="../../../assets/swift_logo.png">
+              <img class="honeycomb-cell__image" src="../../../assets/HexSwift_logo.png">
               
             </li>
             <li class="honeycomb-cell">
-                <img class="honeycomb-cell__image" src="../../../assets/filipi_logo.png">
+                <img class="honeycomb-cell__image" src="../../../assets/HexFilibi_logo.png">
                 
               </li>
               <li class="honeycomb-cell">
-                <img class="honeycomb-cell__image" src="../../../assets/win_logo.png">
+                <img class="honeycomb-cell__image" src="../../../assets/HexWin_logo.png">
                 
               </li>
               <li class="honeycomb-cell">
-                <img class="honeycomb-cell__image" src="../../../assets/HUDSON_logo.png">
+                <img class="honeycomb-cell__image" src="../../../assets/HexHud_logo.png">
                 
               </li>
           
             <li class="honeycomb-cell honeycomb__placeholder"></li>
           </ul>
 
-        <div class="footer" data-aos="fade-down" data-aos-duration="4000">
-			<div class="container-fluid">
-				<footer class="py-5">
-					<div class="row" id="footerAlignment">
-						<div class="subscribe row">
-							<div class="letter col-md-6 col-12">
-								<h5>Subscribe to our newsletter</h5>
-								<p>Monthly digest of whats new and exciting from us.</p>
-							</div>
-							<div class="text col-md-6 col-12">
-								<form class="form-inline">
-									<input type="text" name="Subscribe" id="subscribe" class="form-control mr-2"
-										placeholder="Enter your email">
-									<button type="button" class="btn btn-primary" id="btnSubscribe">Subscribe</button>
-								</form>
-							</div>
-						</div>
-					</div>
-					<div class="row" id="footerAlignment1">
-						<div class="col-md-2 col-6" id="align">
-							<div class="downloadImages">
-								<div class="image1">
-									<img src="../../../assets/AppleStore.png" alt="" class="img-fluid">
-								</div>
-								<div class="image2">
-									<img src="../../../assets/playstore.png" alt="" class="img-fluid">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-6" id="align">
-							<h5 class="footerHeader">Explore</h5>
-							<ul class="nav flex-column">
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Institution</a>
-								</li>
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Download the
-										app</a></li>
-							</ul>
-						</div>
-						<div class="col-md-2 col-6" id="align">
-							<h5 class="footerHeader">About</h5>
-							<ul class="nav flex-column">
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">About
-										Rowgistic</a></li>
-								<li class="footer-item mb-2"><a routerLink="/Rowgistic/contactus"
-										class="nav-link p-0 text-muted">Contact US</a></li>
-								<li class="footer-item mb-2"><a routerLink="/Rowgistic/Partners"
-										class="nav-link p-0 text-muted">Partners and clubs</a>
-								</li>
-								<li class="footer-item mb-2"><a (click)="navigatetoTerms()" style="cursor: pointer;"
-										class="nav-link p-0 text-muted">Terms of service</a></li>
-							</ul>
-						</div>
-						<div class="col-md-2 col-6" id="align">
-							<h5 class="footerHeader">Resources</h5>
-							<ul class="nav flex-column">
-								<li class="footer-item mb-2">    <a  class="nav-link p-0 text-muted" routerLink="/Rowgistic">Features</a>
-								</li>
-                                <li class="footer-item mb-2"><a (click)="articles()" style="cursor: pointer;" class="nav-link p-0 text-muted">Articles</a></li>
-								<li class="footer-item mb-2"><a  class="nav-link p-0 text-muted" style="cursor: pointer;" (click)="faqPopup()">FAQs</a></li>
-							
-							</ul>
-						</div>
-					</div>
-				</footer>
-			</div>
-		</div>
-		<div class="copyRights">
-			<div class="d-flex copyrightAlign">
-				<p>&copy; 2024 Rowgistic. All rights reserved.</p>
-				<ul class="list-unstyled d-flex">
-					<li class="ms-3"><a class="link-dark" href="https://www.facebook.com/profile.php?id=61557922531506">
-							<i class="fab fa-facebook-f"></i>
-						</a></li>
-					<li class="ms-3"><a class="link-dark" href="https://twitter.com/Rowgistic"><i
-								class="fa-brands fa-x-twitter"></i>
-						</a></li>
-					<li class="ms-3"><a class="link-dark" href="https://www.linkedin.com/company/rowgistic/"><i
-								class="fab fa-linkedin-in"></i></a></li>
-				</ul>
-			</div>
-		</div>
+</div>
+
+<div class="footer" data-aos="fade-down" data-aos-duration="4000">
+    <div class="container-fluid">
+        <footer class="py-5">
+            <div class="row" id="footerAlignment">
+                <div class="subscribe row">
+                    <div class="letter col-md-6 col-12">
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of whats new and exciting from us.</p>
+                    </div>
+                    <div class="text col-md-6 col-12">
+                        <form class="form-inline">
+                            <input type="text" name="Subscribe" id="subscribe" class="form-control mr-2"
+                                placeholder="Enter your email">
+                            <button type="button" class="btn btn-primary" id="btnSubscribe">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="footerAlignment1">
+                <div class="col-md-2 col-6" id="align">
+                    <div class="downloadImages">
+                        <div class="image1">
+                            <img src="../../../assets/AppleStore.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="image2">
+                            <img src="../../../assets/playstore.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6" id="align">
+                    <h5 class="footerHeader">Explore</h5>
+                    <ul class="nav flex-column">
+                        <li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Institution</a>
+                        </li>
+                        <li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Download the
+                                app</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6" id="align">
+                    <h5 class="footerHeader">About</h5>
+                    <ul class="nav flex-column">
+                        <li class="footer-item mb-2"><a routerLink="/Rowgistic/AboutUs" class="nav-link p-0 text-muted">About
+                                Rowgistic</a></li>
+                  
+                        <li class="footer-item mb-2"><a routerLink="/Rowgistic/Partners"
+                                class="nav-link p-0 text-muted">Clubs & Potential Partners</a>
+                        </li>
+                        <li class="footer-item mb-2"><a routerLink="/Rowgistic/contactus"
+                            class="nav-link p-0 text-muted">Contact US</a></li>
+                        <li class="footer-item mb-2"><a (click)="navigatetoTerms()" style="cursor: pointer;"
+                                class="nav-link p-0 text-muted">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6" id="align">
+                    <h5 class="footerHeader">Resources</h5>
+                    <ul class="nav flex-column">
+                        <li class="footer-item mb-2"> <a class="nav-link p-0 text-muted"
+                            routerLink="/Rowgistic">Features</a>
+                        </li>
+                        <li class="footer-item mb-2"><a routerLink="/Rowgistic/Articles" style="cursor: pointer;"
+                            class="nav-link p-0 text-muted">Articles</a></li>
+                    <li class="footer-item mb-2"><a class="nav-link p-0 text-muted" style="cursor: pointer;"
+                        routerLink="/Rowgistic/FAQ">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<div class="copyRights">
+    <div class="d-flex copyrightAlign">
+        <p>&copy; 2024 Rowgistic. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="https://www.facebook.com/profile.php?id=61557922531506">
+                    <i class="fab fa-facebook-f"></i>
+                </a></li>
+            <li class="ms-3"><a class="link-dark" href="https://twitter.com/Rowgistic"><i
+                        class="fa-brands fa-x-twitter"></i>
+                </a></li>
+            <li class="ms-3"><a class="link-dark" href="https://www.linkedin.com/company/rowgistic/"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </div>
+</div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>

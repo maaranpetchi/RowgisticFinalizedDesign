@@ -16,6 +16,8 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { PartnerAndLogoComponent } from './Components/partner-and-logo/partner-and-logo.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
+import { ArticlesComponent } from './Components/articles/articles.component';
+import { FAQComponent } from './Components/faq/faq.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,9 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
     ContactusComponent,
     TermsandconditionComponent,
     PartnerAndLogoComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ArticlesComponent,
+    FAQComponent
   ],
   imports: [
     BrowserModule,

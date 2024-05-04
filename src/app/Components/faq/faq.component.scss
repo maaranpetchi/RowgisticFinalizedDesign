@@ -17,7 +17,12 @@ p {
 }
 
 .contactSection {
-  background-image: linear-gradient(to right top, #f26d1e, #f45f2c, #f35038, #f24143, #ee314e);
+//   background-image: linear-gradient(to right top, #f26d1e, #f45f2c, #f35038, #f24143, #ee314e);
+background-image:url(../../../assets/ComingSoon.jpg) ;
+}
+
+.thirdContainer {
+    margin-top: 189px;
 }
 
 .eventHeading {
@@ -35,9 +40,9 @@ a#navDownload1 {
 }
 
 
-.contactSection {
-  background-image: linear-gradient(to right top, #f26d1e, #f45f2c, #f35038, #f24143, #ee314e);
-}
+// .contactSection {
+//   background-image: linear-gradient(to right top, #f26d1e, #f45f2c, #f35038, #f24143, #ee314e);
+// }
 // .mobilePic{
 //   height: 415px;
 //   width: 493px;
@@ -52,7 +57,7 @@ div#downloadSection {
 
 .downloadText {
     padding-bottom: 12px;
-    font-size: 36px;
+    font-size: xxx-large;
     background: -webkit-linear-gradient(#F36820, #DF2269);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
