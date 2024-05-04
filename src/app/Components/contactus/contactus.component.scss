@@ -17,7 +17,7 @@ p {
 }
 
 .container {
-    padding: 54px;
+    padding: 54px;padding-bottom: 0px;
 }
 
 .eventHeading {
@@ -25,12 +25,25 @@ p {
 }
 
 a#navDownload1 {
-    background: #F36820;
-    border-radius: 50px;
-    padding: 12px 30px 12px 30px;
-    color: white;
-    display: inline-flex;
-    text-decoration: none;
+  color: #F26D1E;
+  background: white;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 12px 30px 12px 30px;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+
+.contactSection {
+  background-image: linear-gradient(to right top, #f26d1e, #f45f2c, #f35038, #f24143, #ee314e);
+}
+.mobilePic{
+  height: 415px;
+  width: 493px;
+}
+div#conatctHead {
+  margin-bottom: 52px;
 }
 
 div#downloadSection {

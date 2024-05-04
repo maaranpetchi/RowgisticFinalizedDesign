@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { doc, getDoc } from 'firebase/firestore';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-landing-page',
@@ -55,7 +56,26 @@ export class LandingPageComponent implements OnInit {
   ngOnInit() {
 
   }
-  
+  faqPopup(){
+
+  Swal.fire({
+    position: "top-end",
+    icon: "info",
+    title: "Not ready yet",
+    showConfirmButton: false,
+    timer: 3000
+  });
+}
+  articles(){
+
+  Swal.fire({
+    position: "top-end",
+    icon: "info",
+    title: "Coming soon",
+    showConfirmButton: false,
+    timer: 3000
+  });
+}
   isNavbarCollapsed = true;
   isBodyBlurred = false;
   

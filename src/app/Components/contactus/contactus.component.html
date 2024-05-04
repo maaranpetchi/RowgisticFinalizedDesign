@@ -21,57 +21,59 @@
 
 <body>
 
-     <nav class="navbar  navbar-expand-lg navbar-dark p-md-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" routerLink="/Rowgistic"><img src="../../../assets/logo.png" class="topNavLogo" alt=""></a>
-            <button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
     
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="mx-auto"></div>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-black" routerLink="/Rowgistic/AboutUs">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" routerLink="/Rowgistic/contactus">Contact Us</a>
-                    </li>
-                    <li class="nav-item" id="DownloadApp">
-                        <a class="nav-link text-white" href="#" id="navDownload1"> Download the app </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-<div [ngClass]="{'blur-body': isBodyBlurred}">
 
     <div class="contactSection">
-        <div class="imageSetting">
-          <div class="container-fluid">
-            <div class="thirdContainer" data-aos="fade-up" data-aos-duration="4000">
-              <div class="container">
-                <div class="row" id="downloadSection">
-                  <div class="col-md-6 col-sm-12">
-                    <h2 class="downloadText">Contact Us</h2>
-                    <p>If you find any bugs and glitches or improvement to the application we are happy to hear your feedback.</p>
-                    <i class="fa fa-envelope" style="font-size:20px"></i>
-                    <span>Email Id</span>
-                    <p class="email">contact@rowgistic.com</p>
-                  </div>
-                  <div class="col-md-6 col-sm-12">
-                    <img src="../.././../assets/Contact.png" class="img-fluid mobilePic" alt="">
-                  </div>
-                </div>
-                <!-- <div class="row">
-                  <div class="col-md-6 col-sm-12"><button type="button" routerLink="/Rowgistic" class="back">Back</button></div>
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
+		<nav class="navbar  navbar-expand-lg navbar-dark p-md-3">
+			<div class="container-fluid">
+				<a class="navbar-brand" routerLink="/Rowgistic"><img src="../../../assets/White_logo.png" class="topNavLogo" alt=""></a>
+				<button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+		
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="mx-auto"></div>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link text-white" routerLink="/Rowgistic/AboutUs">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" routerLink="/Rowgistic/contactus">Contact Us</a>
+						</li>
+						<li class="nav-item" id="DownloadApp">
+							<a class="nav-link " href="#" id="navDownload1"> Download the app </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div [ngClass]="{'blur-body': isBodyBlurred}">
+
+		<div class="container-fluid">
+			<div class="thirdContainer" data-aos="fade-up" data-aos-duration="4000">
+			  <div class="container">
+				<div class="row" id="conatctHead">
+				  <div class="col-md-12 text-center">
+					<h1 class="text-center text-white">Contact Us</h1>
+					<h3 class="text-center text-white">Details of us and our Contact.</h3>
+				  </div>
+				</div>
+				<div class="row" id="downloadSection">
+				  <div class="col-md-6 col-sm-12">
+					<p class="text-white">If you find any bugs and glitches or improvement to the application we are happy to hear your feedback.</p>
+					<i class="fa fa-envelope" style="font-size:20px;color:white"></i>
+					<span style="Color:white">Email Id</span>
+					<p class="email text-white">contact@rowgistic.com</p>
+				  </div>
+				  <div class="col-md-6 col-sm-12">
+					<img src="../.././../assets/contactSection.png" class="img-fluid mobilePic" alt="">
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
       </div>
 
       	
@@ -132,8 +134,9 @@
 							<ul class="nav flex-column">
 								<li class="footer-item mb-2">    <a  class="nav-link p-0 text-muted" routerLink="/Rowgistic">Features</a>
 								</li>
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Articles</a></li>
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="footer-item mb-2"><a (click)="articles()" style="cursor: pointer;" class="nav-link p-0 text-muted">Articles</a></li>
+								<li class="footer-item mb-2"><a  class="nav-link p-0 text-muted" style="cursor: pointer;" (click)="faqPopup()">FAQs</a></li>
+							
 							</ul>
 						</div>
 					</div>

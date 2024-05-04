@@ -218,8 +218,8 @@
 							<ul class="nav flex-column">
 								<li class="footer-item mb-2">    <a  class="nav-link p-0 text-muted" routerLink="/Rowgistic">Features</a>
 								</li>
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Articles</a></li>
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="footer-item mb-2"><a (click)="articles()" style="cursor: pointer;" class="nav-link p-0 text-muted">Articles</a></li>
+                                <li class="footer-item mb-2"><a  class="nav-link p-0 text-muted" style="cursor: pointer;" (click)="faqPopup()">FAQs</a></li>
 							</ul>
 						</div>
 					</div>

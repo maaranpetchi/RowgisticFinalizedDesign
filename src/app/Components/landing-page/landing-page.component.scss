@@ -239,6 +239,9 @@ li.footer-item {
 .regattaContainer {
   // background-image: linear-gradient(to left bottom, #ee314e, #f53f43, #f94e36, #fc5d28, #fd6c14);
 }
+.card-title{
+  font-size: xx-large;
+}
 
 #CardAlign {
   display: flex;
@@ -257,7 +260,7 @@ li.footer-item {
 }
 
 .feature-flex{
-  display: flex !important;
+  // display: flex !important;
   padding: 0px;
   color: white;
   align-items: center;

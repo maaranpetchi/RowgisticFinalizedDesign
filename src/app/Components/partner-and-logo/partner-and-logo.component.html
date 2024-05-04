@@ -48,32 +48,10 @@
         </div>
     </nav>
     <div [ngClass]="{'blur-body': isBodyBlurred}">
-        <!-- <div class="container text-center mt-5">
-        <h2 class="display-4 mb-5">We proudly present our key partners and our member Clubs</h2>
-        <div class="row">
-          <div class="col-6 col-md-4 mb-3">
-            <img src="../../../assets/NSR_LOGO.png" alt="Partner logo" class="img-fluid">
-          </div>
-          <div class="col-6 col-md-4 mb-3">
-            <img src="../../../assets/Horten-Roklubb-logo.jpg" alt="Partner logo" class="img-fluid">
-          </div>
-          <div class="col-6 col-md-4 mb-3">
-            <img src="../../../assets/Christania_logo.png" alt="Partner logo" class="img-fluid">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-6 col-md-6 mb-3">
-            <img src="../../../assets/filibi.png" alt="Partner logo" class="img-fluid">
-          </div>
-          <div class="col-6 col-md-6 mb-3">
-            <img src="../../../assets/filibi.png" alt="Partner logo" class="img-fluid">
-          </div>
-        </div>
-      </div> -->
 
 
-        <section class="section section-default mt-none mb-none">
+
+        <!-- <section class="section section-default mt-none mb-none">
             <div class="container">
                 <h2 class="mb-sm"><strong>Clubs</strong> – We are here for you!</h2>
 
@@ -145,7 +123,58 @@
                     </div>
                 </strong>
             </div>
-        </section>
+        </section> -->
+        <ul class="honeycomb" lang="es">
+            <li class="honeycomb-cell">
+              <img class="honeycomb-cell__image" src="../../../assets/NSR_logo.png">
+              
+            </li>
+            </ul>
+
+        <ul class="honeycomb" lang="es">
+            <li class="honeycomb-cell">
+              <img class="honeycomb-cell__image" src="../../../assets/AVE_logo.png">
+              
+            </li>
+            <li class="honeycomb-cell">
+              <img class="honeycomb-cell__image" src="../../../assets/roseman_logo.png">
+              
+            </li>
+            <li class="honeycomb-cell">
+              <img class="honeycomb-cell__image" src="../../../assets/cucc_logo.png">
+              
+            </li>
+            <li class="honeycomb-cell">
+              <img class="honeycomb-cell__image" src="../../../assets/vega_logo.png">
+              
+            </li>
+            <li class="honeycomb-cell">
+              <img class="honeycomb-cell__image" src="../../../assets/syk_logo.png">
+              
+            </li>
+            <li class="honeycomb-cell">
+              <img class="honeycomb-cell__image" src="../../../assets/Emp_logo.png">
+              
+            </li>
+            <li class="honeycomb-cell">
+              <img class="honeycomb-cell__image" src="../../../assets/swift_logo.png">
+              
+            </li>
+            <li class="honeycomb-cell">
+                <img class="honeycomb-cell__image" src="../../../assets/filipi_logo.png">
+                
+              </li>
+              <li class="honeycomb-cell">
+                <img class="honeycomb-cell__image" src="../../../assets/win_logo.png">
+                
+              </li>
+              <li class="honeycomb-cell">
+                <img class="honeycomb-cell__image" src="../../../assets/HUDSON_logo.png">
+                
+              </li>
+          
+            <li class="honeycomb-cell honeycomb__placeholder"></li>
+          </ul>
 
         <div class="footer" data-aos="fade-down" data-aos-duration="4000">
 			<div class="container-fluid">
@@ -204,8 +233,9 @@
 							<ul class="nav flex-column">
 								<li class="footer-item mb-2">    <a  class="nav-link p-0 text-muted" routerLink="/Rowgistic">Features</a>
 								</li>
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Articles</a></li>
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="footer-item mb-2"><a (click)="articles()" style="cursor: pointer;" class="nav-link p-0 text-muted">Articles</a></li>
+								<li class="footer-item mb-2"><a  class="nav-link p-0 text-muted" style="cursor: pointer;" (click)="faqPopup()">FAQs</a></li>
+							
 							</ul>
 						</div>
 					</div>
