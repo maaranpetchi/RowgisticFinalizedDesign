@@ -184,6 +184,15 @@ ul.navbar-nav {
 }
 
 
+p.padding-down {
+    margin-top: 19px;
+    padding-bottom: 26px;
+}
+.contact-card{
+        display: flex;
+        align-items: center;
+}
+
 ////////////ProfileCard//////
 .about-team {
     display: flex;
@@ -428,11 +437,18 @@ ul.navbar-nav {
     // background-color: #F36820;
 }
 .downloadSect{
-    background: url(../../../assets/Ornament.png);
+    background: url(../../../assets/Ornament.png);height: 106px;
     background-repeat: no-repeat;
 
 }
 
+p.text-white.justify_content {
+    text-align: justify;
+}
+.contact-img{
+    display: flex;
+    align-items: center;
+}
 .Abouttext{
     background: -webkit-linear-gradient(#F36820, #DF2269);
     -webkit-background-clip: text;

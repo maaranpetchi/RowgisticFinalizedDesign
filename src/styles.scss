@@ -6,10 +6,16 @@ a.nav-link.text-white {
     font-size: larger;
 }
 
+body{
+    overflow-x: hidden;
+}
+.footerHeader {
+    text-transform: uppercase;
+    padding-left: 31px;
+    padding-bottom: 7px;
+    font-size: 12px;
+}
 
-
-
-
-// h1,h2,h3,h4,h5,h6,p,span,strong{
-//     font-size: auto !important;
-// }
+div#align {
+    margin-top: 29px;
+}

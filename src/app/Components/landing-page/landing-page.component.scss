@@ -18,6 +18,10 @@ h4 {
   font-size: 64px;
 }
 
+.easierHead{
+  font-size: 53px;
+}
+
 ul.navbar-nav {
   text-align: center;
 }
@@ -50,6 +54,10 @@ a.nav-link.text-white {
   position: absolute;
 }
 
+#carouselImage2{
+  filter:brightness(0.3)
+}
+
 a#navDownload {
   background: #F36820;
   border-radius: 50px;
@@ -79,6 +87,10 @@ a#navDownload1 {
   line-height: 33px;
 }
 
+.SecondSlide-caption{
+  bottom: 9.25rem;
+  line-height: 33px;
+}
 // img#carouselImage {
 //   height: 440px;
 // }
@@ -180,10 +192,10 @@ li.footer-item {
   font-weight: bold;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  background-color: transparent;
-}
+// .card:hover {
+//   transform: scale(1.05);
+//   background-color: transparent;
+// }
 
 .card.active {
   background-color: transparent;
@@ -454,7 +466,10 @@ div#footerAlignment1 {
   h4 {
     font-size: 22px;
   }
-
+  .easierHead{
+    font-size: 22px;
+  }
+  
   .paragraphTwenty {
     font-size: 16px;
   }
