@@ -16,8 +16,20 @@ export class ArticlesComponent {
   isScrolled: boolean = false;
 
   toggleNavbar() {
-    this.isNavbarCollapsed = !this.isNavbarCollapsed;
-    this.isBodyBlurred = !this.isBodyBlurred;
+    const navbarToggler = document.getElementById('navbar-toggler');
+    if (navbarToggler) {
+      if (navbarToggler.classList.contains('focus-visible')) {
+        navbarToggler.classList.remove('focus-visible');
+        navbarToggler.style.boxShadow = 'none';
+        this.isNavbarCollapsed = !this.isNavbarCollapsed;
+        this.isBodyBlurred = !this.isBodyBlurred;
+      } else {
+        navbarToggler.classList.add('focus-visible');
+        navbarToggler.style.boxShadow = '0 0 0 .25rem';
+        this.isNavbarCollapsed = !this.isNavbarCollapsed;
+        this.isBodyBlurred = !this.isBodyBlurred;
+      }
+    }
   }
 
   navigatetoTerms() {

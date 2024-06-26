@@ -12,10 +12,15 @@ h3,
 h4,
 h5 {
   font-weight: bold;
+  font-size: auto !important;
 }
 
 h4 {
   font-size: 64px;
+}
+#navbar-toggler.focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 .25rem rgba(0, 123, 255, 0.25);
 }
 
 .easierHead{
@@ -154,6 +159,8 @@ li.footer-item {
 
 }
 
+
+
 .imageMarker {
   display: flex;
   justify-content: left;
@@ -281,7 +288,7 @@ li.footer-item {
 
 ///////Mobile Download////
 .appstore {
-  width: 74%;
+  width: 100%;
   padding-left: 0px;
   margin-bottom: 20px;
 }
@@ -292,7 +299,7 @@ p.joinEvent {
 }
 
 .qrcode {
-  height: 210px;
+  // height: 210px;
 }
 
 .mobilePic {
@@ -300,10 +307,11 @@ p.joinEvent {
 }
 
 #mobileDownloadBackground {
-  background-size: contain;
-  height: 109px;
+  // background-size: contain;
   background-image: url(../../../assets/Ornament.png);
+  padding: 36px 0px 0px 48px;
   background-repeat: no-repeat;
+  background-position: left top;
 }
 
 .mobileDownload {
@@ -320,7 +328,10 @@ p.joinEvent {
 img#topPics {
   height: 141px;
 }
-
+#PlayStore {
+  display: flex;
+  flex-direction: column;
+}
 .downloadText {
   padding-bottom: 12px;
   font-size: 36px;
@@ -430,7 +441,7 @@ div#footerAlignment1 {
 }
 
 .subscribe.row {
-  padding-left: 60px;
+  padding-left: 6% !important;
 }
 
 #footerAlignment {
@@ -497,4 +508,13 @@ div#footerAlignment1 {
     padding: 20px;
     background-color: transparent;
 }
+
+#mobileDownloadBackground {
+  background-image: url(../../../assets/Ornament.png);
+  padding: 101px 9px 3px 26px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+
 }

@@ -25,8 +25,8 @@
 		[ngClass]="{'bg-light': !isScrolled, 'bg-blue': isScrolled}">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><img src="../../../assets/logo.png" class="topNavLogo" alt=""></a>
-			<button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+			<button id="navbar-toggler" class="navbar-toggler" (click)="toggleNavbar()" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -86,7 +86,7 @@
 					<img src="../../../assets/Rowing2.png" class="d-block w-100" alt="..." id="carouselImage">
 					<div class="carousel-caption  .d-block">
 						<h4 class="animated bounceInRight easierHead" style="animation-delay: 1s;">
-							Easier Rowgistic - Easier Rowing
+							Easier Logistics - Easier Rowing
 						</h4>
 						<!-- <p class="animated bounceInLeft" style="animation-delay:2s"  ></p> -->
 						<br>
@@ -94,7 +94,7 @@
 				</div>
 				<div class="carousel-item" data-bs-interval="7000">
 					<img src="../../../assets/Rowing3.png" class="d-block w-100" alt="..." id="carouselImage">
-					<div class="SecondSlide-caption  .d-block">
+					<div class="carousel-caption  .d-block">
 						<h4 class="animated bounceInRight" style="animation-delay: 1s;">Club Specific Customization
 						</h4>
 						<p class="animated bounceInLeft paragraphTwenty" style="animation-delay:2s">Enroll your club
@@ -149,7 +149,6 @@
 						awaits!.
 					</p> -->
 				</div>
-
 				<div class="row" id="Feature">
 					<div class="col-md-6 mb-4" id="CardAlign" data-aos="fade-right" data-aos-duration="4000">
 						<div class="card">
@@ -195,16 +194,18 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="BoatContainer" data-aos="fade-up" data-aos-duration="4000" id="feature">
 				<div class="container">
 					<div class="row" id="Feature">
-						<div class="col-md-5 mb-4" data-aos="fade-left" data-aos-duration="4000">
+						<!-- Image Column -->
+						<div class="col-md-5 mb-4 order-md-1 order-2" data-aos="fade-left" data-aos-duration="4000">
 							<div class="image-container">
 								<img src="../../../assets/FleetFeatures.png" alt="Boats Image" class="img-fluid">
 							</div>
 						</div>
-						<div class="col-md-6 mb-4" id="CardAlign" data-aos="fade-right" data-aos-duration="4000">
+						<!-- Card Column -->
+						<div class="col-md-6 mb-4 order-md-2 order-1" id="CardAlign" data-aos="fade-right"
+							data-aos-duration="4000">
 							<div class="card">
 								<div class="card-body">
 									<h5 class="card-title feature-flex justify-content-center">Fleet</h5>
@@ -221,8 +222,7 @@
 										<div class="feature-flex flex-wrap w-100">
 											<div class="feature-flex m-2">
 												<h3 class="inline_elements feature-flex align-items-center">• Reserve
-													boats
-												</h3>
+													boats</h3>
 											</div>
 											<ul class="list-unstyled bullet-list w-100">
 												<li> Reserve specific boats for your workouts.</li>
@@ -231,20 +231,16 @@
 										<div class="feature-flex flex-wrap w-100">
 											<div class="feature-flex m-2">
 												<h3 class="inline_elements feature-flex align-items-center">•
-													Permissions
-												</h3>
+													Permissions</h3>
 											</div>
 											<ul class="list-unstyled bullet-list w-100">
 												<li> Boats can be assigned permissions which restrict who can use a
-													specific
-													boat.</li>
+													specific boat.</li>
 											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
-
-
 						</div>
 					</div>
 				</div>
@@ -309,24 +305,27 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="container-fluid" data-aos="fade-up" data-aos-duration="4000">
-			<div class="row" id="mobileDownloadBackground">
-			</div>
+		<div class="container-fluid" id="mobileDownloadBackground" data-aos="fade-up" data-aos-duration="4000">
 			<div class="row" id="downloadSection">
-				<div class="col-md-6">
-					<h2 class="downloadText">Use the opportunity to download the Rowgistic App. <br>Get started now!
-					</h2>
-					<img src="../../../assets/App&playstore.png" alt="" class="appstore img-fluid">
-					<img src="../../../assets/DownloadQRCode.png" alt="" class="qrcode img-fluid">
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<div class="row" id="PlayStore">
+						<div class="col-12">
+							<h2 class="downloadText">Use the opportunity to download the Rowgistic App. <br>Get started
+								now!</h2>
+						</div>
+						<div class="col-md-6 col-sm-6 col-12">
+							<img src="../../../assets/App&playstore.png" alt="" class="appstore img-fluid">
+						</div>
+						<div class="col-md-6 col-sm-6 col-6">
+							<img src="../../../assets/DownloadQRCode.png" alt="" class="qrcode img-fluid">
+						</div>
+					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-12 col-xs-12">
 					<img src="../.././../assets/DownloadRowing.png" class="img-fluid mobilePic" alt="">
 				</div>
 			</div>
 		</div>
-
-
 		<div class="footer" data-aos="fade-down" data-aos-duration="4000">
 			<div class="container-fluid">
 				<footer class="py-5">
@@ -369,9 +368,8 @@
 							<h5 class="footerHeader">About</h5>
 							<ul class="nav flex-column">
 								<li class="footer-item mb-2"><a routerLink="/Rowgistic/AboutUs"
-										class="nav-link p-0 text-muted">About
-										Rowgistic</a></li>
-
+										class="nav-link p-0 text-muted">About Rowgistic</a>
+								</li>
 								<li class="footer-item mb-2"><a routerLink="/Rowgistic/Partners"
 										class="nav-link p-0 text-muted">Clubs & Potential Partners</a>
 								</li>

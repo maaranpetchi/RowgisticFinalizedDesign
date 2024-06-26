@@ -1,6 +1,7 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 import { doc, getDoc } from 'firebase/firestore';
 import Swal from 'sweetalert2';
@@ -28,6 +29,9 @@ export class LandingPageComponent implements OnInit {
 
 
   @ViewChild('scriptElement', { static: true }) scriptElement: ElementRef | undefined;
+
+
+  
   CreatedDate: any;
   eventNames: any;
   eventLocations: any;
@@ -42,7 +46,7 @@ export class LandingPageComponent implements OnInit {
   boatSettingImages: any;
   boatName: any;
 
-  constructor(private elRef: ElementRef, private route: Router, private fb: FormBuilder) {
+  constructor(private elRef: ElementRef, private route: Router, private fb: FormBuilder,private viewportScroller: ViewportScroller) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -54,7 +58,11 @@ export class LandingPageComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    this.route.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.viewportScroller.scrollToPosition([0, 0]);
+      }
+    }); 
   }
   faqPopup(){
 
@@ -80,8 +88,21 @@ export class LandingPageComponent implements OnInit {
   isBodyBlurred = false;
   
   toggleNavbar() {
-    this.isNavbarCollapsed = !this.isNavbarCollapsed;
-    this.isBodyBlurred = !this.isBodyBlurred;
+  
+    const navbarToggler = document.getElementById('navbar-toggler');
+    if (navbarToggler) {
+      if (navbarToggler.classList.contains('focus-visible')) {
+        navbarToggler.classList.remove('focus-visible');
+        navbarToggler.style.boxShadow = 'none';
+        this.isNavbarCollapsed = !this.isNavbarCollapsed;
+        this.isBodyBlurred = !this.isBodyBlurred;
+      } else {
+        navbarToggler.classList.add('focus-visible');
+        navbarToggler.style.boxShadow = '0 0 0 .25rem';
+        this.isNavbarCollapsed = !this.isNavbarCollapsed;
+        this.isBodyBlurred = !this.isBodyBlurred;
+      }
+    }
   }
 
 

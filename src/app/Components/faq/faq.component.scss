@@ -28,7 +28,17 @@ background-image:url(../../../assets/ComingSoon.jpg) ;
 .eventHeading {
     text-align: center;
 }
+#navbar-toggler.focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 .25rem rgba(0, 123, 255, 0.25);
+}
+.bg-light {
+  background-color: transparent !important;
+}
 
+.blur-body {
+  filter: blur(5px);
+}
 a#navDownload1 {
   color: #F26D1E;
   background: white;

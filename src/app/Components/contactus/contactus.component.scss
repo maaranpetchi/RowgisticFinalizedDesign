@@ -15,6 +15,18 @@ span,
 p {
     font-weight: bold;
 }
+#navbar-toggler.focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 .25rem rgba(0, 123, 255, 0.25);
+}
+.bg-light {
+  background-color: transparent !important;
+}
+
+.blur-body {
+  filter: blur(5px);
+}
+
 
 .contactSection {
   background-image: linear-gradient(to right top, #f26d1e, #f45f2c, #f35038, #f24143, #ee314e);

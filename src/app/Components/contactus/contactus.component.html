@@ -24,11 +24,11 @@
 
 
 	<div class="contactSection">
-		<nav class="navbar  navbar-expand-lg navbar-dark p-md-3">
+		<nav class="navbar  navbar-expand-lg navbar-dark p-md-3" [ngClass]="{'bg-light': !isScrolled, 'bg-blue': isScrolled}">
 			<div class="container-fluid">
 				<a class="navbar-brand" routerLink="/Rowgistic"><img src="../../../assets/White_logo.png"
 						class="topNavLogo" alt=""></a>
-				<button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
+				<button id="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -79,7 +79,7 @@
 		</div>
 
 
-		<div class="footer" data-aos="fade-down" data-aos-duration="4000">
+		<div class="footer" data-aos="fade-down" data-aos-duration="4000" [ngClass]="{'blur-body': isBodyBlurred}">
 			<div class="container-fluid">
 				<footer class="py-5">
 					<div class="row" id="footerAlignment">
@@ -135,8 +135,7 @@
 						<div class="col-md-2 col-6" id="align">
 							<h5 class="footerHeader">Resources</h5>
 							<ul class="nav flex-column">
-								<li class="footer-item mb-2"> <a class="nav-link p-0 text-muted"
-										routerLink="/Rowgistic">Features</a>
+								<li class="footer-item mb-2"> <a [routerLink]="['/Rowgistic']" fragment="featureSection" class="nav-link p-0 text-muted">Features</a>
 								</li>
 								<li class="footer-item mb-2"><a routerLink="/Rowgistic/Articles" style="cursor: pointer;"
 										class="nav-link p-0 text-muted">Articles</a></li>
@@ -149,7 +148,7 @@
 				</footer>
 			</div>
 		</div>
-		<div class="copyRights">
+		<div class="copyRights" [ngClass]="{'blur-body': isBodyBlurred}">
 			<div class="d-flex copyrightAlign">
 				<p>&copy; 2024 Rowgistic. All rights reserved.</p>
 				<ul class="list-unstyled d-flex">

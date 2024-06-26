@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
@@ -19,245 +18,16 @@
 </head>
 
 <body>
-    <!-- <div class="contactSection">
-
-        <nav class="navbar  navbar-expand-lg navbar-dark p-md-3">
-			<div class="container-fluid">
-				<a class="navbar-brand" routerLink="/Rowgistic"><img src="../../../assets/White_logo.png" class="topNavLogo" alt=""></a>
-				<button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-		
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<div class="mx-auto"></div>
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link text-white" routerLink="/Rowgistic/AboutUs">About Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-white" routerLink="/Rowgistic/contactus">Contact Us</a>
-						</li>
-						<li class="nav-item" id="DownloadApp">
-							<a class="nav-link " href="#" id="navDownload1"> Download the app </a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-    <div [ngClass]="{'blur-body': isBodyBlurred}">
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="AboutTeam" id="AboutSection">
-                        <div class="about-team">
-                            <h1 class="aboutTeamTitle">ABOUT US</h1>
-                        </div>
-                        <div class="container-fluid Rowgisitic ">
-                            <h2 class="mt-5">Rowgistic</h2>
-                            <p class="lead"> Our CEO as a rower himself kept on coming to regattas and heard that
-                                certain things for some boats was missing. This was something that often turned out to
-                                start problems with available boats at regattas and created stress on the rowers. Also,
-                                when loading the trailers for big regattas, it was hard to keep track of what was
-                                already on the trailer or not, which lead to such problems. This inspired him to make
-                                Rowgistic, a digital solution which helps logistical problems within clubs. From this
-                                original idea, we expanded on this and thought, why not make an all-in-one app for
-                                rowing. This led to the app we offer today.</p>
-
-                            <h3 class="mt-4 feature_padding">Features:</h3>
-                            <ul class="list-unstyled">
-                                <li>The Rowgistic App is an all-in-one app for rowers.</li>
-                                <li>The app provides services for every functional part required for a club to organize
-                                    trainings and regattas.</li>
-                                <li>The app easily let you provide important information to the club members and make it
-                                    easily accessible.</li>
-                                <li>Maybe most importantly, it solves the original problem. This is done through our
-                                    quality check, which makes the crew of the boat check off the condition of different
-                                    parts of the boat, to make sure everything is in good condition and loaded on the
-                                    trailer among other things.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-</div>
-            <div class="about-team">
-                <h1 class="aboutTeamTitle">OUR TEAM</h1>
-            </div>
-
-            <div class="wrapper">
-                <div class="card">
-
-                    <div class="image">
-                        <img src="../../../assets/Morten.jpeg" alt="" />
-
-                    </div>
-                    <div class="content">
-                        <h3>MORTEN ZAKARIASSEN<br /><span>CHAIRMAN</span></h3>
-                        <ul>
-                            <a href="#"> <i class="fab fa-linkedin"></i></a>
-                            <a href="#"> <i class="fab fa-instagram"></i></a>
-                            <a href="#"> <i class="fab fa-facebook-square"></i></a>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="../../../assets/Max.jpeg" alt="" />
-                    </div>
-                    <div class="content">
-                        <h3>MAXIMIILAN ZAKARIASSEN<br /><span>CEO</span></h3>
-                        <ul>
-                            <a href="#"> <i class="fab fa-linkedin"></i></a>
-                            <a href="#"> <i class="fab fa-instagram"></i></a>
-                            <a href="#"> <i class="fab fa-facebook-square"></i></a>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="../../../assets/JR7_0708.jpg" alt="" />
-                    </div>
-                    <div class="content">
-                        <h3>DAMIR CAUSVIC<br /><span>COO</span></h3>
-                        <ul>
-                            <a href="#"> <i class="fab fa-linkedin"></i></a>
-                            <a href="#"> <i class="fab fa-instagram"></i></a>
-                            <a href="#"> <i class="fab fa-facebook-square"></i></a>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="../../../assets/roeland-profile.jpeg" alt="" />
-                    </div>
-                    <div class="content">
-                        <h3>ROLELAND VAN NIEUWKREK<br /><span>CTO</span></h3>
-                        <ul>
-                            <a href="#"> <i class="fab fa-linkedin"></i></a>
-                            <a href="#"> <i class="fab fa-instagram"></i></a>
-                            <a href="#"> <i class="fab fa-facebook-square"></i></a>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col text-center">
-                        <div class="DownloadApp">
-                            <div class="about-download">
-                                <h1 class="aboutdownloadTitle">Download and try the app for yourself here                                </h1>
-                            </div>
-                            <div class="button">
-                                <a class="nav-link text-white" href="#" id="navDownload1"> Download the app </a>
-                            </div>
-                            <div class="height"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    	<div class="footer" data-aos="fade-down" data-aos-duration="4000">
-			<div class="container-fluid">
-				<footer class="py-5">
-					<div class="row" id="footerAlignment">
-						<div class="subscribe row">
-							<div class="letter col-md-6 col-12">
-								<h5>Subscribe to our newsletter</h5>
-								<p>Monthly digest of whats new and exciting from us.</p>
-							</div>
-							<div class="text col-md-6 col-12">
-								<form class="form-inline">
-									<input type="text" name="Subscribe" id="subscribe" class="form-control mr-2"
-										placeholder="Enter your email">
-									<button type="button" class="btn btn-primary" id="btnSubscribe">Subscribe</button>
-								</form>
-							</div>
-						</div>
-					</div>
-					<div class="row" id="footerAlignment1">
-						<div class="col-md-2 col-6" id="align">
-							<div class="downloadImages">
-								<div class="image1">
-									<img src="../../../assets/AppleStore.png" alt="" class="img-fluid">
-								</div>
-								<div class="image2">
-									<img src="../../../assets/playstore.png" alt="" class="img-fluid">
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-6" id="align">
-							<h5 class="footerHeader">Explore</h5>
-							<ul class="nav flex-column">
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Institution</a>
-								</li>
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">Download the
-										app</a></li>
-							</ul>
-						</div>
-						<div class="col-md-2 col-6" id="align">
-							<h5 class="footerHeader">About</h5>
-							<ul class="nav flex-column">
-								<li class="footer-item mb-2"><a href="#" class="nav-link p-0 text-muted">About
-										Rowgistic</a></li>
-								<li class="footer-item mb-2"><a routerLink="/Rowgistic/contactus"
-										class="nav-link p-0 text-muted">Contact US</a></li>
-								<li class="footer-item mb-2"><a routerLink="/Rowgistic/Partners"
-										class="nav-link p-0 text-muted">Clubs & Potential Partners</a>
-								</li>
-								<li class="footer-item mb-2"><a (click)="navigatetoTerms()" style="cursor: pointer;"
-										class="nav-link p-0 text-muted">Terms & Conditions</a></li>
-							</ul>
-						</div>
-						<div class="col-md-2 col-6" id="align">
-							<h5 class="footerHeader">Resources</h5>
-							<ul class="nav flex-column">
-								<li class="footer-item mb-2">    <a  class="nav-link p-0 text-muted" routerLink="/Rowgistic">Features</a>
-								</li>
-                                <li class="footer-item mb-2"><a (click)="articles()" style="cursor: pointer;" class="nav-link p-0 text-muted">Articles</a></li>
-                                <li class="footer-item mb-2"><a  class="nav-link p-0 text-muted" style="cursor: pointer;" (click)="faqPopup()">FAQs</a></li>
-							</ul>
-						</div>
-					</div>
-				</footer>
-			</div>
-		</div>
-		<div class="copyRights">
-			<div class="d-flex copyrightAlign">
-				<p>&copy; 2024 Rowgistic. All rights reserved.</p>
-				<ul class="list-styled d-flex">
-					<li class="ms-3"><a class="link-dark" href="https://www.facebook.com/profile.php?id=61557922531506">
-							<i class="fab fa-facebook-f"></i>
-						</a></li>
-					<li class="ms-3"><a class="link-dark" href="https://twitter.com/Rowgistic"><i
-								class="fa-brands fa-x-twitter"></i>
-						</a></li>
-					<li class="ms-3"><a class="link-dark" href="https://www.linkedin.com/company/rowgistic/"><i
-								class="fab fa-linkedin-in"></i></a></li>
-				</ul>
-			</div>
-		</div>
-    </div> -->
-
-
-
-    <div class="contactSection">
+    <div class="contactSection" id="AboutRowgistic">
         <nav class="navbar  navbar-expand-lg navbar-dark p-md-3">
             <div class="container-fluid">
                 <a class="navbar-brand" routerLink="/Rowgistic"><img src="../../../assets/White_logo.png"
                         class="topNavLogo" alt=""></a>
-                <button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
+                        <button id="navbar-toggler" class="navbar-toggler" (click)="toggleNavbar()" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav">
@@ -275,7 +45,6 @@
             </div>
         </nav>
         <div [ngClass]="{'blur-body': isBodyBlurred}">
-
             <div class="container-fluid">
                 <div class="thirdContainer" data-aos="fade-up" data-aos-duration="4000">
                     <div class="container">
@@ -290,7 +59,8 @@
                             <div class="col-md-8 col-sm-12">
                                 <h3 class="text-white">Streamlining Rowing Logistics and Club Management with Precision.
                                 </h3>
-                                <p class="text-white  justify_content" style="text-indent:63px ;">Our CEO as a rower himself kept on coming to regattas and heard
+                                <p class="text-white  justify_content" style="text-indent:63px ;">Our CEO as a rower
+                                    himself kept on coming to regattas and heard
                                     that certain things for some boats was missing. This was something that often turned
                                     out to start problems with available boats at regattas and created stress on the
                                     rowers. Also, when loading the trailers for big regattas, it was hard to keep track
@@ -299,7 +69,8 @@
                                     within clubs. From this original idea, we expanded on this and thought, why not make
                                     an all-in-one app for rowing. This led to the app we offer today.
                                 </p>
-                                <p class="text-white padding-down justify_content">The Rowgistic App is an all-in-one app for rowers. The app
+                                <p class="text-white padding-down justify_content">The Rowgistic App is an all-in-one
+                                    app for rowers. The app
                                     provides services for every functional part required for a club to organize
                                     trainings and regattas. The app easily let you provide important information to the
                                     club members and make it easily accessible. Maybe most importantly, it solves the
@@ -316,9 +87,8 @@
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="aboutUsSection">
+    <div class="aboutUsSection" [ngClass]="{'blur-body': isBodyBlurred}">
         <div class="container">
             <div class="row">
                 <div class="col-12 center">
@@ -327,12 +97,11 @@
                     <p>information and insights for your business growth.</p>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="text-center">
                         <img src="../../../assets/Morten_pic.png" alt="Expert 1" class="expert-image">
-                        <p>Maximilian Zakariassen </p>
+                        <p>Morten Zakariassen </p>
                         <span>Chairman</span>
                     </div>
                 </div>
@@ -360,16 +129,15 @@
             </div>
         </div>
     </div>
-
-    <div class="">
+    <div class="" [ngClass]="{'blur-body': isBodyBlurred}">
         <div class="downloadSect"></div>
         <div class="container text-center">
-            <h1 class="Abouttext">Use the opportunity to download  the Rowgistic App. </h1>
+            <h1 class="Abouttext">Use the opportunity to download the Rowgistic App. </h1>
             <h1 class="Abouttext">Get started now!</h1>
             <a href="#" class="btn-lg my-4" id="navDownload1">Download the app</a>
-          </div>
+        </div>
     </div>
-    <div class="footer" data-aos="fade-down" data-aos-duration="4000">
+    <div class="footer" data-aos="fade-down" data-aos-duration="4000" [ngClass]="{'blur-body': isBodyBlurred}">
         <div class="container-fluid">
             <footer class="py-5">
                 <div class="row" id="footerAlignment">
@@ -410,14 +178,14 @@
                     <div class="col-md-2 col-6" id="align">
                         <h5 class="footerHeader">About</h5>
                         <ul class="nav flex-column">
-                            <li class="footer-item mb-2"><a routerLink="/Rowgistic/AboutUs" class="nav-link p-0 text-muted">About
+                            <li class="footer-item mb-2"><a routerLink="/Rowgistic/AboutUs"
+                                    class="nav-link p-0 text-muted">About
                                     Rowgistic</a></li>
-                     
                             <li class="footer-item mb-2"><a routerLink="/Rowgistic/Partners"
                                     class="nav-link p-0 text-muted">Clubs & Potential Partners</a>
                             </li>
                             <li class="footer-item mb-2"><a routerLink="/Rowgistic/contactus"
-                                class="nav-link p-0 text-muted">Contact US</a></li>
+                                    class="nav-link p-0 text-muted">Contact US</a></li>
                             <li class="footer-item mb-2"><a (click)="navigatetoTerms()" style="cursor: pointer;"
                                     class="nav-link p-0 text-muted">Terms & Conditions</a></li>
                         </ul>
@@ -425,21 +193,20 @@
                     <div class="col-md-2 col-6" id="align">
                         <h5 class="footerHeader">Resources</h5>
                         <ul class="nav flex-column">
-                            <li class="footer-item mb-2"> <a class="nav-link p-0 text-muted"
-                                    routerLink="/Rowgistic">Features</a>
+                            <li class="footer-item mb-2"> <a [routerLink]="['/Rowgistic']" fragment="featureSection"
+                                    class="nav-link p-0 text-muted">Features</a>
                             </li>
                             <li class="footer-item mb-2"><a routerLink="/Rowgistic/Articles" style="cursor: pointer;"
-                                class="nav-link p-0 text-muted">Articles</a></li>
-                        <li class="footer-item mb-2"><a class="nav-link p-0 text-muted" style="cursor: pointer;"
-                            routerLink="/Rowgistic/FAQ">FAQs</a></li>
-
+                                    class="nav-link p-0 text-muted">Articles</a></li>
+                            <li class="footer-item mb-2"><a class="nav-link p-0 text-muted" style="cursor: pointer;"
+                                    routerLink="/Rowgistic/FAQ">FAQs</a></li>
                         </ul>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
-    <div class="copyRights">
+    <div class="copyRights" [ngClass]="{'blur-body': isBodyBlurred}">
         <div class="d-flex copyrightAlign">
             <p>&copy; 2024 Rowgistic. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
@@ -461,7 +228,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
     <!--Boootstrap4-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

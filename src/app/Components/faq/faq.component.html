@@ -22,11 +22,11 @@
 <body >
 
     <div class="contactSection" style="background-image:url(../../../assets/ComingSoon.jpg); background-size:cover;height: 100vh;">
-        <nav class="navbar  navbar-expand-lg navbar-dark p-md-3">
+        <nav class="navbar  navbar-expand-lg navbar-dark p-md-3" [ngClass]="{'bg-light': !isScrolled, 'bg-blue': isScrolled}">
           <div class="container-fluid">
             <a class="navbar-brand" routerLink="/Rowgistic"><img src="../../../assets/White_logo.png"
                 class="topNavLogo" alt=""></a>
-            <button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
+            <button id="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
